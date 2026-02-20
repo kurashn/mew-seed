@@ -714,17 +714,37 @@ h5 {
     }
 
     .hero-bg {
-        background-position: center bottom;
+        background-position: center center;
+        /* Changed from center bottom to show people */
+    }
+
+    .hero-content {
+        background: rgba(0, 0, 0, 0.45);
+        /* Option A: Dark glass plate */
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 40px 20px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        /* Subtle edge highlight */
+        width: 90%;
+        max-width: 500px;
     }
 
     .hero-content h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
+        font-size: 1.8rem;
+        /* Slightly reduced so it fits nicely inside the box */
+        line-height: 1.4;
+        margin-bottom: 25px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        /* Keep text legible */
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.8;
         margin-bottom: 20px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     /* Overall Section Spacing Defaults */
@@ -837,9 +857,9 @@ h5 {
 
     .cta-recruit h3,
     .cta-contact h3 {
-        font-size: 1.4rem;
-        /* Reduced to avoid line breaks on small devices */
-        line-height: 1.4;
+        font-size: 1.15rem;
+        /* Reduced further to reliably prevent line breaks */
+        line-height: 1.5;
     }
 
     .cta-recruit p,
