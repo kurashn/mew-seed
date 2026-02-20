@@ -708,8 +708,10 @@ h5 {
     }
 
     .hero {
-        align-items: center;
-        padding-top: 60px;
+        align-items: flex-start;
+        /* Move text up to fill the empty top space */
+        padding-top: 140px;
+        /* Offset from the fixed 80px header */
         min-height: 600px;
     }
 
