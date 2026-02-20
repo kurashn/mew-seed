@@ -855,11 +855,16 @@ h5 {
         font-size: 1rem;
     }
 
-    .cta-recruit h3,
+    .cta-recruit h3 {
+        font-size: 1.05rem;
+        /* Extremely small to fit perfectly without wrapping */
+        line-height: 1.6;
+    }
+
     .cta-contact h3 {
-        font-size: 1.15rem;
-        /* Reduced further to reliably prevent line breaks */
-        line-height: 1.5;
+        font-size: 1.4rem;
+        /* Restored contact size */
+        line-height: 1.4;
     }
 
     .cta-recruit p,
