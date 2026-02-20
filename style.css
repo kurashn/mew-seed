@@ -1567,8 +1567,8 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    /* White overlay */
+    background: rgba(255, 255, 255, 0.7);
+    /* White overlay matching the screenshot */
     z-index: 1;
 }
 
@@ -1579,7 +1579,7 @@ h5 {
 
 .cta-recruit h3 {
     color: var(--color-primary);
-    /* Changed to primary color */
+    /* Changed to primary color for visibility on white */
     text-shadow: none;
     font-size: 2.5rem;
     margin-bottom: 25px;
