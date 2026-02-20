@@ -839,13 +839,6 @@ h5 {
         padding-bottom: 30px;
     }
 
-    .recruit-copy {
-        font-size: 1.05rem;
-        /* Reduced to match CTA sizing and avoid breaking on "が、" */
-        margin: 20px 0;
-        line-height: 1.6;
-    }
-
     .recruit-sub-copy {
         font-size: 1rem;
     }
@@ -1298,6 +1291,13 @@ h5 {
 
 /* Responsive Recruitment Tweaks */
 @media (max-width: 768px) {
+    .recruit-copy {
+        font-size: 1.05rem;
+        /* Reduced to match CTA sizing and avoid breaking on "が、" */
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+
     .recruit-hero {
         align-items: center;
         /* Center align for recruit */
