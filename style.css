@@ -835,17 +835,22 @@ h5 {
         font-size: 1rem;
     }
 
-    .cta-recruit h3 {
-        font-size: 1.8rem;
+    .cta-recruit h3,
+    .cta-contact h3 {
+        font-size: 1.4rem;
+        /* Reduced to avoid line breaks on small devices */
+        line-height: 1.4;
     }
 
-    .cta-recruit p {
-        font-size: 1rem;
+    .cta-recruit p,
+    .cta-contact p {
+        font-size: 0.95rem;
+        /* Slightly smaller supporting text */
     }
 
     .btn-lg {
-        padding: 15px 40px;
-        font-size: 1.1rem;
+        padding: 12px 30px;
+        font-size: 1rem;
     }
 }
 
