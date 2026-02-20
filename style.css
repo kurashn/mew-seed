@@ -278,10 +278,8 @@ h5 {
 /* Hero (Original) */
 .hero {
     position: relative;
-    height: 80vh;
-    /* Reduced from 100vh for a tighter look */
-    min-height: 500px;
-    /* Reduced from 700px */
+    height: 100vh;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -712,10 +710,7 @@ h5 {
     .hero {
         align-items: center;
         padding-top: 60px;
-        min-height: 400px;
-        /* Reduced from 600px for mobile */
-        height: auto;
-        padding-bottom: 40px;
+        min-height: 600px;
     }
 
     .hero-bg {
