@@ -717,7 +717,8 @@ h5 {
 
     .hero-bg {
         background-position: center center;
-        /* Changed from center bottom to show people */
+        background-attachment: scroll;
+        /* Allow image to scroll naturally on mobile */
     }
 
     .hero-content {
