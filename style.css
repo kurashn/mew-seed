@@ -3026,6 +3026,14 @@ span.wpcf7-not-valid-tip {
     padding-left: 20px;
 }
 
+.post-content ul {
+    list-style-type: disc;
+}
+
+.post-content ol {
+    list-style-type: decimal;
+}
+
 .post-content li {
     margin-bottom: 10px;
 }
