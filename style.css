@@ -1328,6 +1328,24 @@ h5 {
         flex-direction: column;
     }
 
+    .entry-box {
+        padding: 40px 20px;
+    }
+
+    .entry-box h3 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .entry-box p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .btn-tel {
+        font-size: 1.5rem;
+    }
+
     .recruit-table th,
     .recruit-table td {
         display: block;
