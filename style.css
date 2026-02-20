@@ -949,6 +949,30 @@ h5 {
     opacity: 0.5;
 }
 
+@media (max-width: 768px) {
+    .breadcrumbs ul {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        /* Prevent scrollbar cutting text */
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.85rem;
+    }
+
+    /* Hide scrollbar for cleaner look */
+    .breadcrumbs ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .breadcrumbs ul {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
 
 /* Recruit Intro Section */
 .recruit-intro {
