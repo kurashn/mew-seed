@@ -1456,6 +1456,22 @@ h5 {
     .page-title {
         font-size: 2rem;
     }
+
+    /* Form Mobile Layout */
+    .form-group.row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-label.col {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-control-wrap.col {
+        width: 100%;
+    }
 }
 
 /* =========================================
@@ -2298,6 +2314,10 @@ h5 {
         font-size: 2.5rem;
     }
 
+    .rb-section-title {
+        font-size: 1.6rem;
+    }
+
     .rb-voice-card,
     .rb-voice-card.reverse {
         flex-direction: column;
@@ -2322,9 +2342,24 @@ h5 {
         font-size: 0.8rem;
     }
 
+    .rb-cta-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
     .rb-cta-box {
-        padding: 30px;
+        padding: 30px 15px;
         width: 100%;
+    }
+
+    .rb-cta-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .rb-cta-box .btn-primary {
+        font-size: 1.1rem;
+        padding: 15px 30px;
     }
 }
 
@@ -2998,6 +3033,11 @@ span.wpcf7-not-valid-tip {
 
 .cat-blog {
     background-color: #03a9f4;
+}
+
+.cat-recruit {
+    background-color: #e91e63;
+    /* Pink Red for recruit */
 }
 
 .pagination {
