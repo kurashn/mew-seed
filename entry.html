@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エントリーフォーム | 株式会社ミュウシード</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="株式会社ミュウシード">
+                </a>
+            </h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="index.html#guide">寮案内</a></li>
+                    <li><a href="flow.html">ご入居の流れ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html" class="btn-recruit">採用情報</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <p class="tel">06-6643-3300</p>
+            </div>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" style="height: 250px;">
+            <div class="page-header-bg" style="background-image: url('images/recruit_bg_new.png');"></div>
+            <div class="page-header-overlay"
+                style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
+            <div class="container text-center" style="z-index: 1;">
+                <h2 class="page-title">エントリー<span class="ja">Entry</span></h2>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    <li>エントリーフォーム</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="section contact-section">
+            <div class="container container-narrow">
+                <div class="section-title">
+                    <span class="subtitle">Recruitment Entry</span>
+                    <h3>エントリーフォーム</h3>
+                    <p class="mt-4">
+                        私たちと一緒に新しい介護の形を作りませんか？<br>
+                        以下のフォームより必要事項をご記入の上、ご応募ください。<br>
+                        まずは職場見学をしてみたい、という方も大歓迎です！（お電話 06-6643-3300 でも承っております）
+                    </p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <!-- 
+                        このフォーム内の構造は Contact Form 7（CF7）で出力される標準的なHTMLを想定しています。
+                        WordPress組み込み時は、この <form> タグの内側をそっくりそのままCF7の管理画面の「フォーム」欄に貼り付け、
+                        <input> や <textarea> などをCF7のショートコード（[text* your-name] など）に置き換えてください。
+                    -->
+                    <form action="#" method="post" class="wpcf7-form">
+
+                        <div class="form-group row">
+                            <label class="form-label col">お名前 <span class="required">必須</span></label>
+                            <div class="form-control-wrap col">
+                                <input type="text" name="your-name" class="form-control" placeholder="例：山田 太郎" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">ふりがな <span class="required">必須</span></label>
+                            <div class="form-control-wrap col">
+                                <input type="text" name="your-kana" class="form-control" placeholder="例：やまだ たろう"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">メールアドレス <span class="required">必須</span></label>
+                            <div class="form-control-wrap col">
+                                <input type="email" name="your-email" class="form-control"
+                                    placeholder="例：info@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">電話番号 <span class="optional">任意</span></label>
+                            <div class="form-control-wrap col">
+                                <input type="tel" name="your-tel" class="form-control" placeholder="例：090-1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">応募種別 <span class="required">必須</span></label>
+                            <div class="form-control-wrap col">
+                                <div class="select-wrapper">
+                                    <select name="your-entry-type" class="form-control" required>
+                                        <option value="">選択してください</option>
+                                        <option value="正社員希望">正社員希望</option>
+                                        <option value="パート希望">パート希望</option>
+                                        <option value="まずは見学したい">まずは見学したい</option>
+                                        <option value="その他">その他（ご質問など）</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">保有資格など <span class="optional">任意</span></label>
+                            <div class="form-control-wrap col">
+                                <input type="text" name="your-license" class="form-control"
+                                    placeholder="例：初任者研修、介護福祉士 など">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="form-label col">自己PR・ご希望など <span class="required">必須</span></label>
+                            <div class="form-control-wrap col">
+                                <textarea name="your-message" class="form-control" rows="8"
+                                    placeholder="志望動機、希望シフト、またはご質問などをご記入ください。" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center mt-5">
+                            <div class="privacy-policy-acceptance mb-5">
+                                <label>
+                                    <input type="checkbox" name="your-consent" required>
+                                    <a href="privacy.html" target="_blank" class="policy-link">プライバシーポリシー</a>に同意します
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-primary btn-submit">送信する</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="株式会社ミュウシード">
+                    <p class="company-name">株式会社ミュウシード</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="index.html#guide">寮案内</a></li>
+                        <li><a href="flow.html">ご入居の流れ</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; Mew Seed Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
