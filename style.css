@@ -627,14 +627,14 @@ h5 {
         left: 0;
         width: 100%;
         height: calc(100vh - 80px);
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background: #ffffff;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 30px;
+        padding-top: 10px;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
@@ -646,6 +646,7 @@ h5 {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        gap: 20px;
     }
 
     .nav li {
@@ -687,11 +688,11 @@ h5 {
 
     .nav a {
         display: block;
-        font-size: 1.15rem;
+        font-size: 1rem;
         font-weight: bold;
         color: var(--color-text);
         letter-spacing: 0.1em;
-        padding: 20px 0;
+        padding: 8px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         width: 80%;
         margin: 0 auto;
@@ -701,9 +702,9 @@ h5 {
         display: inline-block;
         background-color: var(--color-primary);
         color: white;
-        padding: 16px 40px;
+        padding: 10px 30px;
         border-radius: 40px;
-        margin-top: 25px;
+        margin-top: 10px;
         border-bottom: none;
         width: auto;
         box-shadow: 0 4px 15px rgba(241, 158, 194, 0.4);
