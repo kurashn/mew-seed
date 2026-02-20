@@ -840,8 +840,8 @@ h5 {
     }
 
     .recruit-copy {
-        font-size: 1.15rem;
-        /* Reduced further to avoid awkward breaking on "が、" */
+        font-size: 1.05rem;
+        /* Reduced to match CTA sizing and avoid breaking on "が、" */
         margin: 20px 0;
         line-height: 1.6;
     }
