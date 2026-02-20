@@ -662,12 +662,7 @@ h5 {
     }
 
     .header-contact {
-        display: block;
-        /* Make visible for recruit page */
-        font-size: 0.95rem;
-        /* Small enough to fit next to burger */
-        margin-left: 15px;
-        /* Adjust spacing for mobile */
+        display: none;
     }
 
     .burger-menu {
@@ -723,12 +718,6 @@ h5 {
         /* Changed from center bottom to show people */
     }
 
-    .hero-overlay {
-        background: rgba(255, 255, 255, 0.7);
-        /* White overlay matching recruit section */
-        z-index: -1;
-    }
-
     .hero-content {
         padding: 40px 20px;
         width: 100%;
@@ -738,20 +727,14 @@ h5 {
         font-size: 2rem;
         line-height: 1.4;
         margin-bottom: 25px;
-        color: var(--color-primary);
-        /* Dark readable color */
-        text-shadow: none;
-        /* Remove harsh shadow */
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     .hero-content p {
         font-size: 1rem;
         line-height: 1.8;
         margin-bottom: 20px;
-        color: var(--color-text);
-        /* Dark text */
-        font-weight: 700;
-        text-shadow: none;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
     /* Overall Section Spacing Defaults */
@@ -1596,8 +1579,8 @@ h5 {
 }
 
 .cta-recruit h3 {
-    color: var(--color-primary);
-    /* Changed to primary color for visibility on white */
+    color: var(--color-text);
+    /* Changed to dark text for visibility on white */
     text-shadow: none;
     font-size: 2.5rem;
     margin-bottom: 25px;
