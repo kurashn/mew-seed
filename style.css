@@ -1642,6 +1642,13 @@ h5 {
     transition: 0.5s;
 }
 
+/* Article Page Eyecatch Image (force horizontal) */
+.article-eyecatch {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .news-content {
     padding: 20px;
     flex: 1;
