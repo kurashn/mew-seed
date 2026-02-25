@@ -1676,7 +1676,7 @@ h5 {
     position: relative;
     background-color: transparent;
     /* Override previous color */
-    background-image: url('images/recruit_bg_new.png');
+    background-image: url('images/image2.jpg');
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; REMOVED */
@@ -1926,12 +1926,12 @@ h5 {
 
 /* Assign Images */
 .panel-1 {
-    background-image: url('images/recruit_hero_1.png');
+    background-image: url('images/image2.jpg');
     background-position: center top;
 }
 
 .panel-2 {
-    background-image: url('images/recruit_hero_2.png');
+    background-image: url('images/higashinanamatsu2.JPG');
 }
 
 .panel-3 {
@@ -2242,7 +2242,7 @@ h5 {
 /* Bottom CTA B */
 .rb-bottom-cta {
     position: relative;
-    background-image: url('images/recruit_bg_new.png');
+    background-image: url('images/image5.jpeg');
     /* Use the generated one */
     background-size: cover;
     background-position: center;
@@ -2310,6 +2310,10 @@ h5 {
 
 /* Responsive Adjustments for Pattern B */
 @media (max-width: 768px) {
+    .rb-hero-bg-grid {
+        flex-direction: column;
+    }
+
     .rb-hero-title {
         font-size: 2.5rem;
     }
