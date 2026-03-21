@@ -1948,7 +1948,7 @@ h5 {
 }
 
 .panel-3 {
-    background-image: url('images/staff2.JPEG');
+    background-image: url('images/recruit_hero_3.png');
 }
 
 .rb-hero-overlay {
@@ -2327,18 +2327,8 @@ h5 {
         flex-direction: column;
     }
 
-    /* スマホ版ですこし画像の位置（顔）を下にずらす */
-    .panel-3 {
-        background-position: center 15%;
-    }
-
-    .rb-hero-sub {
-        margin-bottom: 15px;
-    }
-
     .rb-hero-title {
-        font-size: 2.3rem;
-        margin-bottom: 25px; /* ボタンを少し上に引き上げるために余白を詰める */
+        font-size: 2.5rem;
     }
 
     .rb-section-title {
