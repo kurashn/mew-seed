@@ -841,6 +841,12 @@ h5 {
         display: block;
     }
 
+    .pc-only {
+        display: none !important;
+    }
+
+    /* Moved .person-info .role-list media query down for precedence */
+
     .news-list li {
         flex-direction: column;
         gap: 5px;
@@ -1551,6 +1557,26 @@ h5 {
     font-weight: 700;
 }
 
+.person-info .role-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .person-info .role-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.person-info .role-list .role {
+    margin-bottom: 0;
+}
+
 .person-info .role {
     font-size: 0.85rem;
     color: var(--color-text-light);
@@ -1848,8 +1874,8 @@ h5 {
     padding: 5px 15px;
     border-radius: 20px;
     white-space: nowrap;
-    align-self: flex-start;
-    /* Limit width to content */
+    align-self: auto;
+    /* Allowed to be centered now */
 }
 
 .person-info .desc {

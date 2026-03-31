@@ -122,28 +122,18 @@
             <div class="people-grid">
                 <div class="person-card">
                     <div class="person-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image2.jpg"
-                            alt="スタッフ一同">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/staff1.JPEG"
+                            alt="山田">
                     </div>
                     <div class="person-info">
-                        <h4>夢み寮 スタッフ一同</h4>
-                        <p class="role">介護スタッフ</p>
+                        <h4>山田</h4>
+                        <div class="role-list">
+                            <span class="role">夢み寮 東七松</span>
+                            <span class="role">サービス提供責任者</span>
+                            <span class="role">勤務歴：7年6ヶ月</span>
+                        </div>
                         <p class="desc">
                             利用者様と介護士という関係の枠に囚われず、人間同士の触れ合い中で仕事していることを忘れず、おじいちゃんおばあちゃんとは親愛なる隣人とて接し、大きいことから小さいことまで、困っていることがあれば気が付き、助け、より善い生活が送れるようやり過ぎ程度にお節介を焼きたいです。
-                        </p>
-                    </div>
-                </div>
-                <div class="person-card">
-                    <div class="person-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/staff1.JPEG"
-                            alt="スタッフ">
-                    </div>
-                    <div class="person-info">
-                        <h4>スタッフ名</h4>
-                        <p class="role">役職</p>
-                        <p class="desc">
-                            スタッフの紹介文がここに入ります。<br>
-                            よろしくお願いいたします。
                         </p>
                     </div>
                 </div>
