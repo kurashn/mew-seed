@@ -3234,3 +3234,281 @@ span.wpcf7-not-valid-tip {
         font-size: 1.1rem;
     }
 }
+
+/* Recruit Tabs */
+.recruit-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.recruit-tab-btn {
+    padding: 12px 35px;
+    border: 2px solid var(--color-primary);
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.recruit-tab-btn:hover {
+    background: rgba(203, 221, 0, 0.1);
+}
+.theme-pink .recruit-tab-btn:hover {
+    background: rgba(241, 158, 194, 0.1);
+}
+.recruit-tab-btn.active {
+    background: var(--color-primary);
+    color: #fff;
+}
+.recruit-tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+.recruit-tab-content.active {
+    display: block;
+}
+
+/* Recruit Detail Content */
+.recruit-detail-content {
+    text-align: left;
+    color: var(--color-text);
+}
+.rd-header {
+    background: rgba(241, 158, 194, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--color-primary);
+}
+.rd-catchphrase {
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.rd-header p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+.rd-section {
+    margin-bottom: 30px;
+}
+.rd-section h5 {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.rd-voice-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+.rd-voice-box p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+.rd-voice-box p:last-child {
+    margin-bottom: 0;
+}
+.rd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.rd-grid .rd-section {
+    margin-bottom: 0;
+}
+.rd-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.rd-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+.rd-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.rd-list-check li::before {
+    content: "✔";
+}
+
+/* Job type section heading (vertical stacked layout) */
+.job-type-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 35px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-primary);
+}
+.job-type-heading:first-of-type {
+    margin-top: 0;
+}
+.job-type-heading .job-type-badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.job-type-heading h4 {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Stopped badge */
+.recruit-stopped {
+    text-align: center;
+    padding: 60px 20px;
+}
+.recruit-stopped p {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+}
+.recruit-stopped .stopped-badge {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #999;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .job-type-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .job-type-heading h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Job Accordion */
+.job-accordion {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+.job-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.3s;
+}
+.job-accordion-header:hover {
+    background: #fdfdfd;
+}
+.job-accordion-summary {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 8px;
+}
+.job-accordion-summary .job-type-badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.job-accordion-summary h4 {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin: 0;
+    font-weight: bold;
+}
+.job-highlight {
+    grid-column: 1 / -1;
+    justify-self: start;
+    font-size: 1rem;
+    color: #e65c00;
+    font-weight: bold;
+    background: #fff6e6;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.job-accordion-icon {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+.job-accordion.active .job-accordion-header {
+    border-bottom: 1px solid #eee;
+    background: #fdfdfd;
+}
+.job-accordion.active .job-accordion-icon {
+    transform: rotate(180deg);
+}
+.job-accordion-body {
+    display: none;
+    padding: 30px;
+    background: #fff;
+}
+.job-accordion-body .company-table-wrapper {
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+@media (max-width: 768px) {
+    .job-accordion-header {
+        padding: 15px 20px;
+    }
+    .job-accordion-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: 100%;
+        padding-right: 15px; /* ensure space from arrow */
+    }
+    .job-accordion-summary .job-type-badge {
+        margin-top: 0;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+    .job-accordion-summary h4 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+    .job-highlight {
+        font-size: 0.9rem;
+        padding: 4px 12px;
+        margin-top: 2px;
+    }
+    .job-accordion-body {
+        padding: 20px 15px;
+    }
+}

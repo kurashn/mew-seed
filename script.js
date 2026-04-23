@@ -46,4 +46,49 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Recruit Tabs Logic
+    const recruitTabBtns = document.querySelectorAll('.recruit-tab-btn');
+    const recruitTabContents = document.querySelectorAll('.recruit-tab-content');
+
+    if (recruitTabBtns.length > 0 && recruitTabContents.length > 0) {
+        recruitTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                recruitTabBtns.forEach(b => b.classList.remove('active'));
+                recruitTabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                // Show corresponding content
+                const targetId = btn.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+    }
+
+    // Job Accordion Toggle
+    const accordions = document.querySelectorAll('.job-accordion-header');
+    if (accordions.length > 0) {
+        accordions.forEach(header => {
+            header.addEventListener('click', () => {
+                const parent = header.parentElement;
+                const body = parent.querySelector('.job-accordion-body');
+                
+                // Toggle active class on parent
+                parent.classList.toggle('active');
+                
+                // Toggle display of body
+                if (parent.classList.contains('active')) {
+                    body.style.display = 'block';
+                } else {
+                    body.style.display = 'none';
+                }
+            });
+        });
+    }
 });

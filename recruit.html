@@ -249,63 +249,271 @@
         <section class="rb-roles section bg-cream">
             <div class="container container-narrow">
                 <h3 class="rb-section-title text-center">採用中の職種<br><small>Recruitment</small></h3>
-                <div class="company-table-wrapper"
-                    style="background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding: 30px; margin-top: 2rem;">
-                    <table class="company-table">
-                        <tbody>
-                            <tr>
-                                <th>募集職種</th>
-                                <td>ヘルパー</td>
-                            </tr>
-                            <tr>
-                                <th>職種形態</th>
-                                <td>パート</td>
-                            </tr>
-                            <tr>
-                                <th>資格</th>
-                                <td>ヘルパー2級（初任者研修）以上</td>
-                            </tr>
-                            <tr>
-                                <th>勤務時間</th>
-                                <td>
-                                    A) 7：00～16：00<br>
-                                    B) 8：00～17：00<br>
-                                    C) 11：00～20：00<br>
-                                    D) 13：00～22：00<br>
-                                    <span
-                                        style="display: block; margin-top: 8px; font-size: 0.9em; color: #666;">※パートは、A)～D)のうち、2シフト以上可能な方</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>休日</th>
-                                <td>
-                                    週2日～勤務OK<br>
-                                    <span
-                                        style="display: block; margin-top: 8px; font-size: 0.9em; color: #666;">※勤務日数などご相談ください。</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>給与</th>
-                                <td>時給：950～1100円（経験・能力による）</td>
-                            </tr>
-                            <tr>
-                                <th>待遇・福利厚生</th>
-                                <td>交通費支給・各種保険完備・車通勤（要相談）</td>
-                            </tr>
-                            <tr>
-                                <th>応募方法</th>
-                                <td>
-                                    まずはお気軽にご連絡下さい。<br>
-                                    <span style="font-size: 1.25em; font-weight: bold; display: block; margin: 8px 0;">
-                                        <i class="fa-solid fa-phone" style="color: #666;"></i> 06-6415-6888
-                                    </span>
-                                    受付：平日10:00～17:00<br>
-                                    <span
-                                        style="display: block; margin-top: 8px; font-size: 0.9em; color: #666;">※採用係まで</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Tabs -->
+                <div class="recruit-tabs">
+                    <button class="recruit-tab-btn active" data-target="tab-higashinanamatsu">東七松</button>
+                    <button class="recruit-tab-btn" data-target="tab-oshokita">大庄北</button>
+                    <button class="recruit-tab-btn" data-target="tab-daimotsu">だいもつ</button>
+                </div>
+
+                <!-- Tab Content: 東七松 -->
+                <div class="recruit-tab-content active" id="tab-higashinanamatsu">
+                    <div class="company-table-wrapper" style="background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.05);padding:30px;margin-bottom:25px;">
+                        <div class="recruit-detail-content">
+                            <div class="rd-header">
+                                <h4 class="rd-catchphrase">JR立花駅より徒歩約7分！ブランクOK/高齢者向け住宅/賞与年2回・昇給年1回/年間休日約110日/資格取得支援ありでスキルUP可能な環境</h4>
+                                <p>穏やかな雰囲気でスタッフ同士の会話が多く笑顔の多い職場です。<br>
+                                会社負担にて資格取得も可能で未経験、ブランクがある方、キャリアアップを希望されている方には絶好の環境です。<br>
+                                職員増員の為夜勤専門スタッフを募集致します。</p>
+                            </div>
+                            <div class="rd-section">
+                                <h5>「夢み寮 東七松」について</h5>
+                                <p>高齢者が"施設"ではなく、自宅に近い自由で安心できる暮らしを送れるように——<br>
+                                そんな想いから生まれた「寮型」の新しい住まいです。<br>
+                                定員31名の落ち着いた環境で、一人ひとりと丁寧に関われます。</p>
+                            </div>
+                            <div class="rd-section">
+                                <h5>スタッフの声</h5>
+                                <div class="rd-voice-box">
+                                    <p>◆「一度他施設へ転職しましたが、仕事で悩んでいた際に相談したところ、快くカムバックを受け入れていただきました。改めて、この職場の環境の良さを実感しています。」</p>
+                                    <p>◆「様々な職種の方と関わる機会が多く、自然とスキルアップにつながる環境です。スタッフ同士はもちろん、上司とのコミュニケーションも活発で、相談しやすい雰囲気があります。」</p>
+                                </div>
+                                <p style="margin-top:15px;">共通しているのは、施設内の雰囲気の良さと日々の業務を通じて多くの学びが得られる点です。<br>
+                                また、会社負担での資格取得支援制度もあり個々のスキルアップを積極的に応援しています！</p>
+                            </div>
+                            <div class="rd-grid">
+                                <div class="rd-section">
+                                    <h5>働く環境について</h5>
+                                    <ul class="rd-list">
+                                        <li>家庭的で穏やかな雰囲気</li>
+                                        <li>スタッフ同士の会話が多く、笑顔の多い職場</li>
+                                        <li>上司にも相談しやすく、風通し◎</li>
+                                        <li>季節感を大切にした温かい施設づくり</li>
+                                    </ul>
+                                </div>
+                                <div class="rd-section">
+                                    <h5>ここがポイント</h5>
+                                    <ul class="rd-list rd-list-check">
+                                        <li>未経験・ブランクOK</li>
+                                        <li>資格取得は全額会社負担</li>
+                                        <li>パートも賞与あり</li>
+                                        <li>週休2日制/年間休日約110日で働きやすい</li>
+                                        <li>希望休は月3日まで取得可能</li>
+                                    </ul>
+                                </div>
+                                <div class="rd-section" style="grid-column:1/-1;">
+                                    <h5>こんな方におすすめ</h5>
+                                    <ul class="rd-list">
+                                        <li>人間関係の良い職場で働きたい方</li>
+                                        <li>利用者様とゆっくり関わりたい方</li>
+                                        <li>キャリアアップを目指したい方</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 正社員（介護職員） -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">正社員</span>
+                                <h4>介護職/ヘルパー（正職員）</h4>
+                                <div class="job-highlight">月給 239,000円〜267,000円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としてのサービス業務全般（定員：31床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／年齢：60歳迄（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00（休憩60分）<br>9:00～18:00（休憩60分）<br>10:00～19:00（休憩60分）<br>【夜勤】15:00～翌8:00（休憩120分）</td></tr>
+                                    <tr><th>休日</th><td>週休2日のシフト制（月～日）<br>年間休日：約110日／希望休は月3日まで取得可能<br><span style="font-size:0.9em;color:#666;">夏季休暇・冬期休暇・有給休暇あり</span></td></tr>
+                                    <tr><th>給与</th><td>月給 239,000円〜267,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（7,000円/1夜勤）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回（7月）／賞与年2回（4月・10月）<br>年間 25万～110万 ※入社月・勤続年数等により変動</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給・資格取得支援制度（全額受講費負担）・研修制度あり・ハラスメント相談窓口あり・自転車/バイク通勤OK</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 夜勤正社員（介護職員） -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">夜勤正社員</span>
+                                <h4>夜勤メイン介護スタッフ（正職員）</h4>
+                                <div class="job-highlight">月給 267,000円〜288,000円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としての業務全般（定員：31床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※ブランクOK／年齢：60歳迄（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>【夜勤】15:00～翌8:00（休憩120分）<br><span style="font-size:0.9em;color:#666;">※残業ほぼなし</span></td></tr>
+                                    <tr><th>休日</th><td>週休2日のシフト制（月～日）<br>年間休日：約110日／希望休は月3日まで取得可能<br><span style="font-size:0.9em;color:#666;">夏季休暇・冬期休暇・有給休暇あり</span></td></tr>
+                                    <tr><th>給与</th><td>月給 267,000円〜288,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（7,000円/1夜勤）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万 ※入社月・勤続年数等により変動</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給・資格取得支援制度（全額受講費負担）・研修制度あり・ハラスメント相談窓口あり・バイク通勤可・車通勤応相談</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- パート・バイト -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">パート・バイト</span>
+                                <h4>介護職/ヘルパー（パート・バイト）</h4>
+                                <div class="job-highlight">時給 1,260円〜1,460円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としてのサービス業務全般（定員：31床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／65歳まで（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00（休憩60分）<br>9:00～18:00（休憩60分）<br>10:00～19:00（休憩60分）<br><span style="font-size:0.9em;color:#666;">※短時間勤務も相談可（例：9:00～13:00 / 14:00～18:00）／残業ほぼなし</span></td></tr>
+                                    <tr><th>休日</th><td>週2～5日のシフト制（月～日）<br><span style="font-size:0.9em;color:#666;">有給消化率ほぼ100%</span></td></tr>
+                                    <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定致します。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回／パート賞与年2回（4月・10月）<br>年間 約10万～55万 ※入社月・勤続年数等により変動</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給・扶養控除内考慮・資格取得支援制度（全額受講費負担）・研修制度あり・ハラスメント相談窓口あり・自転車/バイク通勤OK・正職員登用あり</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content: 大庄北 -->
+                <div class="recruit-tab-content" id="tab-oshokita">
+                    <div class="company-table-wrapper" style="background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.05);padding:30px;margin-bottom:25px;">
+                        <div class="recruit-detail-content">
+                            <div class="rd-header">
+                                <h4 class="rd-catchphrase">JR立花駅より徒歩約12分！ブランクOK/高齢者向け住宅/賞与年2回・昇給年1回/年間休日約110日/資格取得支援ありでスキルUP可能な環境</h4>
+                                <p>阪神バス「今北」バス停横<br>
+                                JR立花駅より徒歩12分 ／ 立花駅から自転車5分（自転車貸与制度あり）<br>
+                                阪急「武庫之荘」駅から10分（自転車貸与制度あり）</p>
+                                <p>「夢み寮大庄北」でぜひあなたのスキルを活かして働きませんか？<br>
+                                職員増員の為、新規スタッフを募集致します。</p>
+                            </div>
+                            <div class="rd-section">
+                                <h5>当施設「夢み寮」について</h5>
+                                <p>高齢者がより自然な形で、共同生活を送る場を提供したいという想いから「寮」という形での施設運営をスタート致しました。<br>
+                                自宅に近い自由と安心の空間で、自分らしい生活を楽しむ新しいサービスの形を提供しております。<br>
+                                定員は19床。私たちと楽しく一緒に仕事しませんか？</p>
+                            </div>
+                            <div class="rd-section">
+                                <h5>当社で働く魅力について</h5>
+                                <div class="rd-grid">
+                                    <div class="rd-section">
+                                        <h5>昇給年1回・賞与年2回と好待遇</h5>
+                                        <p>当社では正社員に限らず、パートの方も含め賞与支給を行っております。</p>
+                                    </div>
+                                    <div class="rd-section">
+                                        <h5>資格取得支援あり — キャリアUP可</h5>
+                                        <p>実務にて経験・スキルを積んでいただき、全額会社負担にて資格取得も可能。<br>
+                                        未経験、ブランクがある方、キャリアアップの為、資格取得を希望されている方には絶好の環境です。</p>
+                                    </div>
+                                    <div class="rd-section" style="grid-column:1/-1;">
+                                        <h5>週休2日制/年間休日約110日で働きやすい</h5>
+                                        <p>希望休は月3日まで取得可能。夏季休暇、冬期休暇もあり！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 正社員（介護職員） -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">正社員</span>
+                                <h4>介護職/ヘルパー（正職員）</h4>
+                                <div class="job-highlight">月給 235,000円〜263,000円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としてのサービス業務全般（定員：19床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／年齢：60歳迄（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00（休憩60分）<br>9:00～18:00（休憩60分）<br>10:00～19:00（休憩60分）<br>【夜勤】15:00～翌8:00（休憩120分）</td></tr>
+                                    <tr><th>休日</th><td>週休2日のシフト制（月～日）<br>年間休日：約110日／希望休は月3日まで取得可能<br><span style="font-size:0.9em;color:#666;">夏季休暇・冬期休暇・有給休暇あり</span></td></tr>
+                                    <tr><th>給与</th><td>月給 235,000円〜263,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（6,000円/1夜勤）・処遇改善金 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万 ※入社月・勤続年数等により変動</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給（規定通り）・資格取得支援制度（全額受講費負担）・研修制度あり・ハラスメント相談窓口あり・自転車/バイク通勤OK</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 夜勤正社員（介護職員） -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">夜勤正社員</span>
+                                <h4>夜勤メイン介護スタッフ（正職員）</h4>
+                                <div class="job-highlight">月給 259,000円〜281,000円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としての業務全般（定員：19床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※ブランクOK／年齢：60歳迄（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>【夜勤】16:00～翌9:00（休憩120分）<br><span style="font-size:0.9em;color:#666;">※残業ほぼなし</span></td></tr>
+                                    <tr><th>休日</th><td>週休2日のシフト制（月～日）<br>年間休日：約110日／希望休は月3日まで取得可能<br><span style="font-size:0.9em;color:#666;">夏季休暇・冬期休暇・有給休暇あり</span></td></tr>
+                                    <tr><th>給与</th><td>月給 259,000円〜281,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（6,000円/1夜勤 ※回数調整あり）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万 ※入社月・勤続年数等により変動</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給・資格取得支援制度（受講費負担）・研修制度あり・ハラスメント相談窓口あり・車通勤応相談</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- パート・バイト -->
+                    <div class="job-accordion">
+                        <div class="job-accordion-header">
+                            <div class="job-accordion-summary">
+                                <span class="job-type-badge">パート・バイト</span>
+                                <h4>介護職/ヘルパー（パート・バイト）</h4>
+                                <div class="job-highlight">時給 1,260円〜1,460円</div>
+                            </div>
+                            <div class="job-accordion-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="job-accordion-body">
+                            <div class="company-table-wrapper">
+                                <table class="company-table"><tbody>
+                                    <tr><th>仕事内容</th><td>介護職員としてのサービス業務全般（定員：19床）<br><span style="font-size:0.9em;color:#666;">身体介護・生活援助</span></td></tr>
+                                    <tr><th>資格</th><td>下記いずれかの資格をお持ちの方<br>・介護職員初任者研修（旧ヘルパー2級）<br>・介護職員実務者研修（旧ヘルパー1級）<br>・介護福祉士<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／65歳まで（定年制のため）</span></td></tr>
+                                    <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00（休憩60分）<br>9:00～18:00（休憩60分）<br><span style="font-size:0.9em;color:#666;">※短時間勤務も相談可（例：9:00～13:00 / 14:00～18:00）／残業ほぼなし</span></td></tr>
+                                    <tr><th>休日</th><td>週2日～のシフト制（月～日）</td></tr>
+                                    <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定致します。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
+                                    <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）</td></tr>
+                                    <tr><th>待遇・福利厚生</th><td>社会保険完備・交通費支給・扶養控除内考慮・資格取得支援制度（受講費負担）・研修制度あり・ハラスメント相談窓口あり・正職員登用あり</td></tr>
+                                    <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<span style="display:block;margin-top:8px;font-size:0.9em;color:#666;">※採用係まで</span><div style="margin-top:15px;"><a href="entry.html" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content: だいもつ -->
+                <div class="recruit-tab-content" id="tab-daimotsu">
+                    <div class="recruit-stopped">
+                        <span class="stopped-badge">募集停止中</span>
+                        <p>現在、だいもつでは募集を行っておりません。<br>募集再開時にはこちらに掲載いたします。</p>
+                    </div>
                 </div>
             </div>
         </section>
