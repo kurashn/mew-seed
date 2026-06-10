@@ -176,42 +176,189 @@
         <section class="rb-oneday section bg-cream">
             <div class="container">
                 <h3 class="rb-section-title text-center">ある1日の流れ<br><small>One Day Schedule</small></h3>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="time-circle">9:00</div>
-                        <div class="timeline-content">
-                            <h4>出社・申し送り</h4>
-                            <p>夜勤スタッフからの引き継ぎを行い、その日の利用者の体調を確認します。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time-circle">10:00</div>
-                        <div class="timeline-content">
-                            <h4>入浴介助・レクリエーション</h4>
-                            <p>午前中は入浴のサポートや、体操などのレクリエーションを行います。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time-circle">12:00</div>
-                        <div class="timeline-content">
-                            <h4>昼食・休憩</h4>
-                            <p>利用者様と一緒に食事を楽しみ、その後はスタッフ交代で休憩を取ります。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time-circle">15:00</div>
-                        <div class="timeline-content">
-                            <h4>おやつタイム・記録作成</h4>
-                            <p>おやつを提供しながら、利用者様のリラックスタイム。並行して介護記録を作成。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time-circle">18:00</div>
-                        <div class="timeline-content">
-                            <h4>退社</h4>
-                            <p>夜勤スタッフへ申し送りをして業務終了。お疲れ様でした！</p>
-                        </div>
-                    </div>
+                <div class="schedule-table-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>時間</th>
+                                <th>仕事内容</th>
+                                <th>担当</th>
+                                <th>出勤時間</th>
+                                <th>退勤時間</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">6:00</td>
+                                <td class="task">オムツ交換　トイレ介助</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">7:00</td>
+                                <td class="task">起床介助</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">7:30〜</td>
+                                <td class="task">朝食　見守り・介助</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">8:00</td>
+                                <td class="task">服薬介助　下膳　食後口腔ケア　誘導・介助</td>
+                                <td>夜勤 日勤</td>
+                                <td>日勤1出勤</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">8:30</td>
+                                <td class="task">体温　バイタルチェック</td>
+                                <td>夜勤 日勤</td>
+                                <td>日勤2出勤</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">8:50〜</td>
+                                <td class="task">朝礼</td>
+                                <td>夜勤 日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time" rowspan="3">9:00</td>
+                                <td class="task">ラジオ体操</td>
+                                <td>日勤</td>
+                                <td>日勤3出勤</td>
+                                <td>夜勤退勤</td>
+                            </tr>
+                            <tr>
+                                <td class="task">身体介護・生活援助・夢みサービス実施</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="task">レクレーション</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:45</td>
+                                <td class="task">口腔体操</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time" rowspan="2">12:00</td>
+                                <td class="task">昼食</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="task">食事セッティング　見守り・介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time" rowspan="2">12:30〜</td>
+                                <td class="task">服薬介助　下膳　食後口腔ケア　誘導・介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="task">居室移動介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time" rowspan="2">12:30〜</td>
+                                <td class="task">適宜休憩（1時間）</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="task">身体介護・生活援助・夢みサービス実施</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">15:00</td>
+                                <td class="task">食堂誘導・移動介助・レクレーション</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">16:00</td>
+                                <td class="task"></td>
+                                <td></td>
+                                <td>夜勤出勤</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">16:45</td>
+                                <td class="task">口腔体操</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">17:00</td>
+                                <td class="task">夕食　見守り・介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td>日勤1退勤</td>
+                            </tr>
+                            <tr>
+                                <td class="time" rowspan="2">17:30</td>
+                                <td class="task">服薬介助　下膳　食後口腔ケア　誘導・介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td>日勤2退勤</td>
+                            </tr>
+                            <tr>
+                                <td class="task">居室誘導　移動介助</td>
+                                <td>日勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:00</td>
+                                <td class="task">就寝介助</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td>日勤3退勤</td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:00〜</td>
+                                <td class="task">身体介護　巡視2時間おき（起床時まで）</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time">20:00</td>
+                                <td class="task">眠前薬介助</td>
+                                <td>夜勤</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
