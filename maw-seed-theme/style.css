@@ -3526,57 +3526,130 @@ span.wpcf7-not-valid-tip {
     }
 }
 
-/* Schedule Table */
-.schedule-table-wrapper {
-    overflow-x: auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    margin: 30px auto;
-    max-width: 900px;
-    border: 1px solid #f0f0f0;
+/* One Day Schedule (シフト早見表 + 日勤/夜勤タイムライン) */
+.oneday-shifts {
+    max-width: 700px;
+    margin: 30px auto 40px;
 }
-.schedule-table {
+.shift-table {
     width: 100%;
     border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     font-size: 0.95rem;
-    min-width: 650px;
 }
-.schedule-table th,
-.schedule-table td {
+.shift-table th,
+.shift-table td {
     border: 1px solid #e0e0e0;
-    padding: 12px 15px;
-    text-align: center;
+    padding: 14px 18px;
     vertical-align: middle;
 }
-.schedule-table th {
+.shift-table th {
     background-color: var(--color-primary);
     color: #fff;
     font-weight: bold;
     white-space: nowrap;
+    width: 11em;
+    text-align: center;
 }
-.schedule-table td.task {
-    text-align: left;
+.shift-table td .note {
+    font-size: 0.85em;
+    color: #888;
 }
-.schedule-table td.time {
+.oneday-timelines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+}
+.timeline-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    padding: 30px 25px;
+}
+.timeline-title {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+    color: var(--color-text);
+}
+.timeline-title i {
+    color: var(--color-primary-dark);
+    margin-right: 6px;
+}
+.timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.timeline-list::before {
+    content: "";
+    position: absolute;
+    left: 4.6em;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--color-primary);
+    opacity: 0.35;
+}
+.timeline-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 9px 0;
+    position: relative;
+}
+.timeline-list .tl-time {
+    flex: 0 0 4em;
+    text-align: right;
     font-weight: bold;
     color: var(--color-primary-dark);
-    background-color: rgba(241, 158, 194, 0.05);
     white-space: nowrap;
+    font-size: 0.95rem;
+    position: relative;
 }
-.schedule-table tbody tr:hover {
-    background-color: #fafafa;
+.timeline-list .tl-time::after {
+    content: "";
+    position: absolute;
+    right: -0.75em;
+    top: 0.45em;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    transform: translateX(50%);
+}
+.timeline-list .tl-task {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 8px;
 }
 @media (max-width: 768px) {
-    .schedule-table-wrapper {
-        margin: 20px -15px;
-        border-radius: 0;
-        box-shadow: none;
-        border-top: 1px solid #e0e0e0;
-        border-bottom: 1px solid #e0e0e0;
+    .oneday-timelines {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-    .schedule-table th, .schedule-table td {
-        padding: 10px;
+    .timeline-card {
+        padding: 25px 15px;
+    }
+    .shift-table th {
+        width: auto;
+        padding: 12px 10px;
         font-size: 0.85rem;
+    }
+    .shift-table td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+    .timeline-list .tl-task {
+        font-size: 0.9rem;
     }
 }
