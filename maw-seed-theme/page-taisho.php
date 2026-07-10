@@ -8,12 +8,12 @@ get_header(); ?>
     <!-- Page Header -->
     <section class="page-header" style="height: 300px;">
         <div class="page-header-bg"
-            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/hero_bg.png');">
+            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-bg.jpg');">
         </div>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(203, 221, 0, 0.5) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">夢み寮 大庄北<span class="ja">Oshokita Facility</span></h2>
+            <h1 class="page-title">夢み寮 大庄北<span class="ja">Oshokita Facility</span></h1>
         </div>
     </section>
 
@@ -54,19 +54,19 @@ get_header(); ?>
             <!-- 仮の写真または元サイトの画像を使用 -->
             <div class="gallery-grid mt-4">
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita1.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita1.JPG"
                         alt="夢み寮 大庄北 施設写真1">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita3.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita3.JPG"
                         alt="夢み寮 大庄北 施設写真2" style="object-position: center top;">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita4.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita4.JPG"
                         alt="夢み寮 大庄北 施設写真3">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita5.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita5.JPG"
                         alt="夢み寮 大庄北 施設写真4">
                 </div>
             </div>
@@ -93,8 +93,8 @@ get_header(); ?>
                             <td>〒660-0063 兵庫県尼崎市大庄北3-1-23</td>
                         </tr>
                         <tr>
-                            <th>TEL / FAX</th>
-                            <td>TEL：06-6412-3444 &nbsp;&nbsp; FAX：06-6415-6889</td>
+                            <th>TEL</th>
+                            <td>TEL：06-6412-3444</td>
                         </tr>
                         <tr>
                             <th>居室数</th>

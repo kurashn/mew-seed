@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="page-header-overlay"
         style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
     <div class="container text-center" style="z-index: 1;">
-        <h2 class="page-title">会社概要<span class="ja">Company Profile</span></h2>
+        <h1 class="page-title">会社概要<span class="ja">Company Profile</span></h1>
     </div>
 </section>
 
@@ -45,15 +45,15 @@ get_header(); ?>
                     <tr>
                         <th>本社所在地</th>
                         <td>
-                            〒556-0014<br>
-                            大阪市浪速区大国1-2-21 NICビル502
+                            〒660-0051<br>
+                            兵庫県尼崎市東七松町1-8-8
                         </td>
                     </tr>
                     <tr>
                         <th>TEL・FAX</th>
                         <td>
-                            TEL：06-6643-3300（代表）<br>
-                            FAX：06-6643-3302
+                            TEL：06-4950-4565<br>
+                            FAX：06-4950-4514
                         </td>
                     </tr>
                     <tr>
@@ -95,7 +95,7 @@ get_header(); ?>
         <div class="map-wrapper mt-5"
             style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow-soft);">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0255309995874!2d135.49479381523173!3d34.65405238044238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e768e734c51b%3A0xe2da54c861ab4e33!2z44CSNTU2LTAwMTQg5aSn6Ziq5bqc5aSn6Ziq5biC5rWq6YCf5Yy65aSn5Zu9MS0yLTIxIE5JQyDjg5Pjg6s1MDI!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.69741217036!2d135.39578051276023!3d34.73749718118225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e8f33d7b819f%3A0xc6cb557ab4a6c8e9!2z44CSNjYwLTAwNTEg5YW15bqr55yM5bC85bSO5bSO5biC5p2x5LiD5p2-55S677yR5LiB55uu77yY4oiS77yY!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
                 width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

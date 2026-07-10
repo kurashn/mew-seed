@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mew-seed.com/sitemap.xml

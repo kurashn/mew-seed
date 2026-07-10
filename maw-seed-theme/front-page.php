@@ -9,7 +9,7 @@
         <div class="hero-content">
             <p class="hero-intro">高齢化していく社会の中で<br>本当に大切なことが、必要なもの・・・</p>
             <p class="hero-desc">13年間福祉の現場を経験した私たちが<br>たどり着いた答え。</p>
-            <h2 class="hero-title">それは「寮」という<br>かたちでした。</h2>
+            <h1 class="hero-title">それは「寮」という<br>かたちでした。</h1>
             <a href="#guide" class="btn-primary">私たちの「寮」を見る</a>
         </div>
         <div class="hero-wave">
@@ -31,7 +31,7 @@
             <div class="philosophy-grid">
                 <div class="philosophy-card">
                     <div class="card-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-thoughts.png"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-thoughts.png"
                             alt="考え">
                     </div>
                     <h4>私たちの「考え」</h4>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="philosophy-card">
                     <div class="card-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-noticing.png"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-noticing.png"
                             alt="気づき">
                     </div>
                     <h4>私たちの「気づき」</h4>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="philosophy-card">
                     <div class="card-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-strengths.png"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon-strengths.png"
                             alt="強み">
                     </div>
                     <h4>私たちの「強み」</h4>
@@ -69,7 +69,7 @@
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu1.jpg"
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu1.jpg"
                                 alt="住宅型有料老人ホーム「夢み寮 だいもつ」オープン">
                         </a>
                     </div>
@@ -82,20 +82,20 @@
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita1.JPG"
-                                alt="「夢み寮 大庄北」をオープン致しました。">
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita1.JPG"
+                                alt="「夢み寮 大庄北」をオープンいたしました。">
                         </a>
                     </div>
                     <div class="news-content">
                         <span class="date">2017.11.07</span>
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>" class="news-title">「夢み寮
-                            大庄北」を<br>オープン致しました。</a>
+                            大庄北」を<br>オープンいたしました。</a>
                     </div>
                 </article>
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image4.jpeg"
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image4.jpeg"
                                 alt="夢みケアカレッジ開講のお知らせ">
                         </a>
                     </div>
@@ -122,7 +122,7 @@
             <div class="people-grid">
                 <div class="person-card">
                     <div class="person-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/staff1.JPEG"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/staff1.JPEG"
                             alt="山田">
                     </div>
                     <div class="person-info">
@@ -151,39 +151,39 @@
             <div class="dorm-list">
                 <article class="dorm-card">
                     <div class="dorm-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu3.jpg"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu3.jpg"
                             class="dorm-thumb" alt="夢み寮 だいもつ">
                     </div>
                     <div class="dorm-info">
-                        <h4>夢み寮 だいもつ</h4>
+                        <h4>住宅型有料老人ホーム 夢み寮 だいもつ</h4>
                         <p class="address">〒660-0828 <br>兵庫県尼崎市東大物町1-5-27</p>
-                        <p class="tel">TEL: 06-6439-7070</p>
+                        <p class="tel">TEL：06-6439-7070</p>
                         <a href="<?php echo esc_url(home_url('/daimotsu/')); ?>" class="btn-secondary">詳細を見る</a>
                     </div>
                 </article>
 
                 <article class="dorm-card">
                     <div class="dorm-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita4.JPG"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita4.JPG"
                             class="dorm-thumb" alt="夢み寮 大庄北">
                     </div>
                     <div class="dorm-info">
                         <h4>夢み寮 大庄北</h4>
                         <p class="address">〒660-0063 <br>兵庫県尼崎市大庄北3-1-23</p>
-                        <p class="tel">TEL: 06-6412-3444</p>
-                        <a href="<?php echo esc_url(home_url('/oshokita/')); ?>" class="btn-secondary">詳細を見る</a>
+                        <p class="tel">TEL：06-6412-3444</p>
+                        <a href="<?php echo esc_url(home_url('/taisho/')); ?>" class="btn-secondary">詳細を見る</a>
                     </div>
                 </article>
 
                 <article class="dorm-card">
                     <div class="dorm-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu3.jpg"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu3.jpg"
                             class="dorm-thumb" alt="夢み寮 東七松">
                     </div>
                     <div class="dorm-info">
                         <h4>夢み寮 東七松</h4>
                         <p class="address">〒660-0051 <br>兵庫県尼崎市東七松町1-8-8</p>
-                        <p class="tel">TEL: 06-6415-6888</p>
+                        <p class="tel">TEL：06-6415-6888</p>
                         <a href="<?php echo esc_url(home_url('/higashinanamatsu/')); ?>"
                             class="btn-secondary">詳細を見る</a>
                     </div>

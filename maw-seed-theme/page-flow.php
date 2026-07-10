@@ -11,7 +11,7 @@ get_header(); ?>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">ご入居の流れ<span class="ja">Flow Guide</span></h2>
+            <h1 class="page-title">ご入居の流れ<span class="ja">Flow Guide</span></h1>
         </div>
     </section>
 
@@ -44,7 +44,7 @@ get_header(); ?>
                     <div class="step-content">
                         <h4>お問い合せ</h4>
                         <p>まずは、お気軽にお電話ください。<br>
-                            06-6643-3300</p>
+                            06-4950-4565</p>
                         <div class="step-action mt-3">
                             <p class="text-small mt-2">受付時間：平日 9:00〜18:00</p>
                         </div>
@@ -68,7 +68,7 @@ get_header(); ?>
                     <div class="step-number">03</div>
                     <div class="step-content">
                         <h4>ご入居前面談</h4>
-                        <p>ご本人様とご家族様と一緒に、ご面談させて頂きます。<br>生活上のご希望や、必要なサポートについてお伺いします。</p>
+                        <p>ご本人様とご家族様と一緒に、ご面談させていただきます。<br>生活上のご希望や、必要なサポートについてお伺いします。</p>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@ get_header(); ?>
                     <div class="step-number">04</div>
                     <div class="step-content">
                         <h4>申込書記入・審査</h4>
-                        <p>入居申込書をご記入いただきます。<br>その後、簡単な入居審査をさせて頂きます。</p>
+                        <p>入居申込書をご記入いただきます。<br>その後、簡単な入居審査をさせていただきます。</p>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@ get_header(); ?>
                     <div class="step-number">05</div>
                     <div class="step-content">
                         <h4>ご契約・スケジュール調整</h4>
-                        <p>ご契約手続きをさせて頂きます。<br>お引越し日とスケジュールの確認・調整を致します。</p>
+                        <p>ご契約手続きをさせていただきます。<br>お引越し日とスケジュールの確認・調整をいたします。</p>
                     </div>
                 </div>
 

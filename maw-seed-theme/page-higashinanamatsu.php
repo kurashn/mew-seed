@@ -8,12 +8,12 @@ get_header(); ?>
     <!-- Page Header -->
     <section class="page-header" style="height: 300px;">
         <div class="page-header-bg"
-            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/hero_bg.png');">
+            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/hero-bg.jpg');">
         </div>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(203, 221, 0, 0.5) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">夢み寮 東七松<span class="ja">Higashi-Nanamatsu Facility</span></h2>
+            <h1 class="page-title">夢み寮 東七松<span class="ja">Higashi-Nanamatsu Facility</span></h1>
         </div>
     </section>
 
@@ -54,19 +54,19 @@ get_header(); ?>
             <!-- 仮の写真または元サイトの画像を使用 -->
             <div class="gallery-grid mt-4">
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu1.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu1.JPG"
                         alt="夢み寮 東七松 施設写真1">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu2.JPG"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu2.JPG"
                         alt="夢み寮 東七松 施設写真2">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu3.jpg"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu3.jpg"
                         alt="夢み寮 東七松 施設写真3">
                 </div>
                 <div class="gallery-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu4.jpg"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu4.jpg"
                         alt="夢み寮 東七松 施設写真4">
                 </div>
             </div>

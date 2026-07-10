@@ -10,7 +10,7 @@ get_header(); ?>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">お知らせ<span class="ja">News & Blog</span></h2>
+            <h1 class="page-title">お知らせ<span class="ja">News & Blog</span></h1>
         </div>
     </section>
 

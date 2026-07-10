@@ -12,12 +12,12 @@
     <?php wp_body_open(); ?>
     <header class="header">
         <div class="header-inner">
-            <h1 class="logo">
+            <p class="logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png"
                         alt="<?php bloginfo('name'); ?>">
                 </a>
-            </h1>
+            </p>
             <nav class="nav">
                 <?php
                 wp_nav_menu(array(
@@ -40,7 +40,7 @@
                 <?php endif; ?>
             </nav>
             <div class="header-contact">
-                <p class="tel">06-6643-3300</p>
+                <p class="tel">06-4950-4565</p>
             </div>
             <div class="burger-menu">
                 <span></span>

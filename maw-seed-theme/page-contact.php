@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">お問い合わせ<span class="ja">Contact Us</span></h2>
+            <h1 class="page-title">お問い合わせ<span class="ja">Contact Us</span></h1>
         </div>
     </section>
 
@@ -36,7 +36,7 @@ get_header(); ?>
                 <p class="mt-4">
                     入居に関するご相談や見学のお申し込み、その他ご質問など、<br>
                     下記フォームよりお気軽にお問い合わせください。<br>
-                    お電話（06-6643-3300 / 平日 9:00〜18:00）でも承っております。
+                    お電話（06-4950-4565 / 平日 9:00〜18:00）でも承っております。
                 </p>
             </div>
 

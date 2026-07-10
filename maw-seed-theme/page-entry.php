@@ -8,12 +8,12 @@ get_header(); ?>
     <!-- Page Header -->
     <section class="page-header" style="height: 250px;">
         <div class="page-header-bg"
-            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/recruit_bg_new.png');">
+            style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/images/recruit_bg_new.jpg');">
         </div>
         <div class="page-header-overlay"
             style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(203, 221, 0, 0.4) 100%);"></div>
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title">エントリー<span class="ja">Entry</span></h2>
+            <h1 class="page-title">エントリー<span class="ja">Entry</span></h1>
         </div>
     </section>
 
@@ -38,7 +38,7 @@ get_header(); ?>
                 <p class="mt-4">
                     私たちと一緒に新しい介護の形を作りませんか？<br>
                     以下のフォームより必要事項をご記入の上、ご応募ください。<br>
-                    まずは職場見学をしてみたい、という方も大歓迎です！（お電話 06-6643-3300 でも承っております）
+                    まずは職場見学をしてみたい、という方も大歓迎です！（お電話 06-4950-4565 でも承っております）
                 </p>
             </div>
 

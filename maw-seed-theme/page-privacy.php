@@ -9,8 +9,8 @@ get_header(); ?>
     <!-- Page Header -->
     <section class="page-header" style="height: auto; padding: 80px 0 40px; background-color: #fff; color: #333;">
         <div class="container text-center" style="z-index: 1;">
-            <h2 class="page-title" style="color: #333;">プライバシーポリシー<span class="ja" style="color: #666;">Privacy
-                    Policy</span></h2>
+            <h1 class="page-title" style="color: #333;">プライバシーポリシー<span class="ja" style="color: #666;">Privacy
+                    Policy</span></h1>
         </div>
     </section>
 

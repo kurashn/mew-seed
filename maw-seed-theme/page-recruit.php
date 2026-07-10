@@ -16,7 +16,7 @@ get_header(); ?>
         <div class="rb-hero-overlay"></div>
         <div class="container text-center rb-hero-content">
             <p class="rb-hero-sub">その優しさが、誰かの支えになる</p>
-            <h2 class="rb-hero-title">「ありがとう」が<br>仕事になる。</h2>
+            <h1 class="rb-hero-title">「ありがとう」が<br>仕事になる。</h1>
             <div class="rb-hero-cta">
                 <a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary btn-lg btn-round">話を聞いてみる
                     <i class="fa-solid fa-arrow-right"></i></a>
@@ -57,7 +57,8 @@ get_header(); ?>
         </div>
     </section>
 
-    <!-- Recruit Blog Section -->
+    <!-- Recruit Blog Section (非表示) -->
+    <!--
     <section class="rb-blog section bg-cream">
         <div class="container">
             <h3 class="rb-section-title text-center">採用ブログ<br><small>Recruit Blog</small></h3>
@@ -66,7 +67,7 @@ get_header(); ?>
                     onclick="window.location.href='<?php echo esc_url(home_url('/news-detail/')); ?>';"
                     style="cursor: pointer;">
                     <div class="news-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image5.jpeg"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image5.jpeg"
                             alt="社内研修の様子">
                     </div>
                     <div class="news-content">
@@ -82,7 +83,7 @@ get_header(); ?>
                     onclick="window.location.href='<?php echo esc_url(home_url('/news-detail/')); ?>';"
                     style="cursor: pointer;">
                     <div class="news-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image3.jpeg"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image3.jpeg"
                             alt="スタッフインタビュー">
                     </div>
                     <div class="news-content">
@@ -98,7 +99,7 @@ get_header(); ?>
                     onclick="window.location.href='<?php echo esc_url(home_url('/news-detail/')); ?>';"
                     style="cursor: pointer;">
                     <div class="news-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image1.jpeg"
+                        <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image1.jpeg"
                             alt="クリスマス会">
                     </div>
                     <div class="news-content">
@@ -115,6 +116,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    -->
 
     <!-- Staff Voices Section -->
     <section class="rb-voice section bg-light">
@@ -123,7 +125,7 @@ get_header(); ?>
 
             <div class="rb-voice-card">
                 <div class="rb-voice-img">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image2.jpg"
+                    <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image2.jpg"
                         alt="Staff Voice">
                 </div>
                 <div class="rb-voice-text">
@@ -377,7 +379,7 @@ get_header(); ?>
                             <h4 class="rd-catchphrase">JR立花駅より徒歩約7分！ブランクOK/高齢者向け住宅/賞与年2回・昇給年1回/年間休日約110日/資格取得支援ありでスキルUP可能な環境</h4>
                             <p>穏やかな雰囲気でスタッフ同士の会話が多く笑顔の多い職場です。<br>
                             会社負担にて資格取得も可能で未経験、ブランクがある方、キャリアアップを希望されている方には絶好の環境です。<br>
-                            職員増員の為夜勤専門スタッフを募集致します。</p>
+                            職員増員の為夜勤専門スタッフを募集いたします。</p>
                         </div>
                         <div class="rd-section">
                             <h5>「夢み寮 東七松」について</h5>
@@ -441,10 +443,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／年齢：60歳迄</span></td></tr>
                                 <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00 / 9:00～18:00 / 10:00～19:00<br>【夜勤】15:00～翌8:00</td></tr>
                                 <tr><th>休日</th><td>週休2日制／年間休日：約110日／希望休月3日まで</td></tr>
-                                <tr><th>給与</th><td>月給 239,000円〜267,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（7,000円/回）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>月給 239,000円〜267,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（7,000円/1夜勤）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回（7月）／賞与年2回（4月・10月）<br>年間 25万～110万</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給・資格取得支援（全額受講費負担）・ハラスメント相談窓口あり・自転車/バイク通勤OK</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
@@ -465,10 +467,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※ブランクOK／年齢：60歳迄</span></td></tr>
                                 <tr><th>勤務時間</th><td>【夜勤】15:00～翌8:00（休憩120分）<br><span style="font-size:0.9em;color:#666;">※残業ほぼなし</span></td></tr>
                                 <tr><th>休日</th><td>週休2日制／年間休日：約110日／希望休月3日まで</td></tr>
-                                <tr><th>給与</th><td>月給 267,000円〜288,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（7,000円/回）・処遇改善手当等 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>月給 267,000円〜288,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（7,000円/1夜勤）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給・資格取得支援（全額受講費負担）・ハラスメント相談窓口あり・バイク/車通勤応相談</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
@@ -489,10 +491,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／65歳まで</span></td></tr>
                                 <tr><th>勤務時間</th><td>8:00～17:00 / 9:00～18:00 / 10:00～19:00<br><span style="font-size:0.9em;color:#666;">※短時間相談可／残業ほぼなし</span></td></tr>
                                 <tr><th>休日</th><td>週2～5日のシフト制<br><span style="font-size:0.9em;color:#666;">有給消化率ほぼ100%</span></td></tr>
-                                <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定致します。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定いたします。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回／パート賞与年2回（4月・10月）<br>年間 約10万～55万</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給・扶養控除内考慮・資格取得支援（全額受講費負担）・ハラスメント相談窓口あり・正職員登用あり</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
@@ -508,11 +510,11 @@ get_header(); ?>
                             JR立花駅より徒歩12分 ／ 立花駅から自転車5分（自転車貸与制度あり）<br>
                             阪急「武庫之荘」駅から10分（自転車貸与制度あり）</p>
                             <p>「夢み寮大庄北」でぜひあなたのスキルを活かして働きませんか？<br>
-                            職員増員の為、新規スタッフを募集致します。</p>
+                            職員増員の為、新規スタッフを募集いたします。</p>
                         </div>
                         <div class="rd-section">
                             <h5>当施設「夢み寮」について</h5>
-                            <p>高齢者がより自然な形で、共同生活を送る場を提供したいという想いから「寮」という形での施設運営をスタート致しました。<br>
+                            <p>高齢者がより自然な形で、共同生活を送る場を提供したいという想いから「寮」という形での施設運営をスタートいたしました。<br>
                             自宅に近い自由と安心の空間で、自分らしい生活を楽しむ新しいサービスの形を提供しております。<br>
                             定員は19床。私たちと楽しく一緒に仕事しませんか？</p>
                         </div>
@@ -552,10 +554,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／年齢：60歳迄</span></td></tr>
                                 <tr><th>勤務時間</th><td>シフト制<br>8:00～17:00 / 9:00～18:00 / 10:00～19:00<br>【夜勤】15:00～翌8:00</td></tr>
                                 <tr><th>休日</th><td>週休2日制／年間休日：約110日／希望休月3日まで</td></tr>
-                                <tr><th>給与</th><td>月給 235,000円〜263,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（6,000円/回）・処遇改善金 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>月給 235,000円〜263,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤4回分（6,000円/1夜勤）・処遇改善金 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給（規定通り）・資格取得支援（全額受講費負担）・ハラスメント相談窓口あり・自転車/バイク通勤OK</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
@@ -576,10 +578,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※ブランクOK／年齢：60歳迄</span></td></tr>
                                 <tr><th>勤務時間</th><td>【夜勤】16:00～翌9:00（休憩120分）<br><span style="font-size:0.9em;color:#666;">※残業ほぼなし</span></td></tr>
                                 <tr><th>休日</th><td>週休2日制／年間休日：約110日／希望休月3日まで</td></tr>
-                                <tr><th>給与</th><td>月給 259,000円〜281,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（6,000円/回 ※回数調整あり）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>月給 259,000円〜281,000円<br><span style="font-size:0.9em;color:#666;">※資格手当・業務手当・夜勤8回分（6,000円/1夜勤 ※回数調整あり）・処遇改善手当 含む<br>※試用期間：6ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）<br>年間 25万～110万</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給・資格取得支援（受講費負担）・ハラスメント相談窓口あり・車通勤応相談</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
@@ -600,10 +602,10 @@ get_header(); ?>
                                 <tr><th>資格</th><td>初任者研修以上<br><span style="font-size:0.9em;color:#666;">※未経験・ブランクOK／65歳まで</span></td></tr>
                                 <tr><th>勤務時間</th><td>8:00～17:00 / 9:00～18:00<br><span style="font-size:0.9em;color:#666;">※短時間相談可（例：9:00～13:00 / 14:00～18:00）／残業ほぼなし</span></td></tr>
                                 <tr><th>休日</th><td>週2日～のシフト制</td></tr>
-                                <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定致します。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
+                                <tr><th>給与</th><td>時給 1,260円〜1,460円<br><span style="font-size:0.9em;color:#666;">※経験・スキルを考慮して決定いたします。<br>※試用期間：3ヵ月（同条件）</span></td></tr>
                                 <tr><th>賞与・昇給</th><td>昇給年1回／賞与年2回（4月・10月）</td></tr>
                                 <tr><th>待遇</th><td>社保完備・交通費支給・扶養控除内考慮・資格取得支援（受講費負担）・ハラスメント相談窓口あり・正職員登用あり</td></tr>
-                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡下さい。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
+                                <tr><th>応募方法</th><td>お電話、または採用フォームよりご応募いただけます。<br>まずはお気軽にご連絡ください。<br><span style="font-size:1.25em;font-weight:bold;display:block;margin:8px 0;"><i class="fa-solid fa-phone" style="color:#666;"></i> 06-6415-6888</span>受付：平日10:00～17:00<div style="margin-top:15px;"><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-primary" style="padding:10px 25px;font-size:0.95em;"><i class="fa-regular fa-envelope"></i> 採用フォームはこちら</a></div></td></tr>
                             </tbody></table>
                         </div>
                     </div>
