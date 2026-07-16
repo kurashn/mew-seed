@@ -69,6 +69,19 @@
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu1.JPG"
+                                alt="夢み寮ホームページリニューアルのお知らせ">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <span class="date">2026.07.16</span>
+                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>"
+                            class="news-title">ホームページを<br>リニューアルしました</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-img">
+                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
                             <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu1.jpg"
                                 alt="住宅型有料老人ホーム「夢み寮 だいもつ」オープン">
                         </a>
@@ -90,19 +103,6 @@
                         <span class="date">2017.11.07</span>
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>" class="news-title">「夢み寮
                             大庄北」を<br>オープンいたしました。</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-img">
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/image4.jpeg"
-                                alt="夢みケアカレッジ開講のお知らせ">
-                        </a>
-                    </div>
-                    <div class="news-content">
-                        <span class="date">2016.04.14</span>
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>"
-                            class="news-title">夢みケアカレッジ<br>開講のお知らせ</a>
                     </div>
                 </article>
             </div>
