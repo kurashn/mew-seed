@@ -54,9 +54,13 @@ get_header(); ?>
                         </header>
 
                         <div class="post-content">
-                            <!-- WP: Thumbnail -->
+                            <!-- WP: Thumbnail（未設定時はブランドのデフォルト画像） -->
                             <?php if (has_post_thumbnail()): ?>
                                 <?php the_post_thumbnail('large', array('class' => 'img-fluid mb-4 rounded shadow-sm w-100 article-eyecatch')); ?>
+                            <?php else: ?>
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/images/news-default.jpg'); ?>"
+                                    alt="<?php echo esc_attr(get_the_title()); ?>"
+                                    class="img-fluid mb-4 rounded shadow-sm w-100 article-eyecatch">
                             <?php endif; ?>
 
                             <!-- WP: the_content() starts here -->

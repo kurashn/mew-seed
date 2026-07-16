@@ -69,7 +69,7 @@
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/higashinanamatsu1.JPG"
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
                                 alt="夢み寮ホームページリニューアルのお知らせ">
                         </a>
                     </div>
@@ -82,27 +82,14 @@
                 <article class="news-card">
                     <div class="news-img">
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/daimotsu1.jpg"
-                                alt="住宅型有料老人ホーム「夢み寮 だいもつ」オープン">
+                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
+                                alt="夢み寮 採用ページリニューアルのお知らせ">
                         </a>
                     </div>
                     <div class="news-content">
-                        <span class="date">2025.04.01</span>
+                        <span class="date">2026.07.16</span>
                         <a href="<?php echo esc_url(home_url('/news-detail/')); ?>"
-                            class="news-title">住宅型有料老人ホーム<br>「夢み寮 だいもつ」オープン</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-img">
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/oshokita1.JPG"
-                                alt="「夢み寮 大庄北」をオープンいたしました。">
-                        </a>
-                    </div>
-                    <div class="news-content">
-                        <span class="date">2017.11.07</span>
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>" class="news-title">「夢み寮
-                            大庄北」を<br>オープンいたしました。</a>
+                            class="news-title">採用ページを<br>リニューアルしました</a>
                     </div>
                 </article>
             </div>
