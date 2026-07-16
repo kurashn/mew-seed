@@ -81,14 +81,14 @@
                 </article>
                 <article class="news-card">
                     <div class="news-img">
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
+                        <a href="<?php echo esc_url(home_url('/news-detail-recruit/')); ?>">
                             <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
                                 alt="夢み寮 採用ページリニューアルのお知らせ">
                         </a>
                     </div>
                     <div class="news-content">
                         <span class="date">2026.07.16</span>
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>"
+                        <a href="<?php echo esc_url(home_url('/news-detail-recruit/')); ?>"
                             class="news-title">採用ページを<br>リニューアルしました</a>
                     </div>
                 </article>
