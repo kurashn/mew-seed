@@ -114,14 +114,13 @@ function maw_seed_seo_meta() {
 		$key = get_post_field( 'post_name', get_queried_object_id() );
 	}
 
+	// OGP画像はサイト共通の ogp.jpg（1200x630）を使用
+	$image = $img_base . 'ogp.jpg';
 	$desc  = '';
-	$image = '';
 	if ( $key && isset( $seo[ $key ] ) ) {
-		$desc  = $seo[ $key ][0];
-		$image = $seo[ $key ][1] ? $img_base . $seo[ $key ][1] : '';
+		$desc = $seo[ $key ][0];
 	} elseif ( is_singular( 'post' ) ) {
-		$desc  = wp_strip_all_tags( get_the_excerpt() );
-		$image = get_the_post_thumbnail_url( null, 'large' );
+		$desc = wp_strip_all_tags( get_the_excerpt() );
 	}
 
 	if ( $desc ) {
@@ -141,6 +140,8 @@ function maw_seed_seo_meta() {
 	}
 	if ( $image ) {
 		echo '<meta property="og:image" content="' . esc_url( $image ) . '">' . "\n";
+		echo '<meta property="og:image:width" content="1200">' . "\n";
+		echo '<meta property="og:image:height" content="630">' . "\n";
 	}
 	echo '<meta property="og:site_name" content="株式会社ミュウシード">' . "\n";
 	echo '<meta property="og:locale" content="ja_JP">' . "\n";
