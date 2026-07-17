@@ -3114,7 +3114,8 @@ span.wpcf7-not-valid-tip {
     color: var(--color-primary);
 }
 
-.category {
+/* カテゴリバッジ（span限定。WPがbodyに付与する.categoryクラスとの衝突回避） */
+span.category {
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
