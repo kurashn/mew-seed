@@ -202,6 +202,23 @@ function maw_seed_seo_meta() {
 add_action( 'wp_head', 'maw_seed_seo_meta', 5 );
 
 /**
+ * 投稿スラッグ（URL）の日本語化を防ぐ。
+ * クライアントが日本語タイトルのまま公開しても、URLが文字化け
+ * （%E7%AF%80...）にならないよう、非ASCIIスラッグを自動で「post-投稿ID」に置換する。
+ * 英数字のスラッグを手入力した場合はそのまま尊重する。
+ */
+function maw_seed_ascii_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+	if ( 'post' !== $post_type ) {
+		return $slug; // 固定ページ等は対象外（既存スラッグ運用）
+	}
+	if ( preg_match( '/[^\x00-\x7F]/', urldecode( $slug ) ) ) {
+		return 'post-' . $post_ID;
+	}
+	return $slug;
+}
+add_filter( 'wp_unique_post_slug', 'maw_seed_ascii_post_slug', 10, 4 );
+
+/**
  * Contact Form 7 の自動整形（autop）を無効化。
  * フォームテンプレートのdivレイアウトに余計な <p>/<br> が挿入されて崩れるのを防ぐ。
  */
