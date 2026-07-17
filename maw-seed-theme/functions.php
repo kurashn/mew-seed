@@ -201,6 +201,12 @@ function maw_seed_seo_meta() {
 add_action( 'wp_head', 'maw_seed_seo_meta', 5 );
 
 /**
+ * Contact Form 7 の自動整形（autop）を無効化。
+ * フォームテンプレートのdivレイアウトに余計な <p>/<br> が挿入されて崩れるのを防ぐ。
+ */
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
+/**
  * Contact Form 7 のフォームを「タイトル」で解決して出力する。
  * フォームIDが環境ごとに変わっても動くようにするためのヘルパー。
  * CF7未導入・フォーム未作成時は電話案内のフォールバックを表示する。

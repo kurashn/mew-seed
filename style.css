@@ -2798,6 +2798,52 @@ select.form-control {
     /* ensure blocks wrap properly */
 }
 
+/* CF7: 同意チェック（acceptance）のレイアウト */
+.form-consent {
+    margin: 35px 0 10px;
+}
+.form-consent .wpcf7-form-control-wrap {
+    display: inline-block;
+}
+.form-consent .wpcf7-list-item {
+    margin: 0;
+}
+.form-consent .wpcf7-list-item label {
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-consent input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* CF7: 送信ボタン */
+.form-submit {
+    margin-top: 25px;
+}
+.form-submit .wpcf7-submit {
+    border: none;
+    cursor: pointer;
+    min-width: 250px;
+    font-family: var(--font-body);
+}
+.form-submit .wpcf7-spinner {
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* CF7: 送信結果メッセージ */
+.wpcf7 form .wpcf7-response-output {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 25px 0 0;
+    font-size: 0.95rem;
+    border-width: 2px;
+}
+
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
     border: 2px solid #ff5e5e;
