@@ -41,84 +41,11 @@ get_header(); ?>
             </div>
 
             <div class="contact-form-wrapper">
-                <!-- 
-                        このフォーム内の構造は Contact Form 7（CF7）で出力される標準的なHTMLを想定しています。
-                        WordPress組み込み時は、この <form> タグの内側をそっくりそのままCF7の管理画面の「フォーム」欄に貼り付け、
-                        <input> や <textarea> などをCF7のショートコード（[text* your-name] など）に置き換えてください。
-                    -->
-                <form action="#" method="post" class="wpcf7-form">
-
-                    <div class="form-group row">
-                        <label class="form-label col">お名前 <span class="required">必須</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [text* your-name class:form-control placeholder "例：山田 太郎"] -->
-                            <input type="text" name="your-name" class="form-control" placeholder="例：山田 太郎" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="form-label col">ふりがな <span class="required">必須</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [text* your-kana class:form-control placeholder "例：やまだ たろう"] -->
-                            <input type="text" name="your-kana" class="form-control" placeholder="例：やまだ たろう" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="form-label col">メールアドレス <span class="required">必須</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [email* your-email class:form-control placeholder "例：info@example.com"] -->
-                            <input type="email" name="your-email" class="form-control" placeholder="例：info@example.com"
-                                required>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="form-label col">電話番号 <span class="optional">任意</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [tel your-tel class:form-control placeholder "例：090-1234-5678"] -->
-                            <input type="tel" name="your-tel" class="form-control" placeholder="例：090-1234-5678">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="form-label col">お問い合わせ種別 <span class="required">必須</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [select* your-subject class:form-control "入居に関するご相談" "見学のお申し込み" "その他のお問い合わせ"] -->
-                            <div class="select-wrapper">
-                                <select name="your-subject" class="form-control" required>
-                                    <option value="">選択してください</option>
-                                    <option value="入居に関するご相談">入居に関するご相談</option>
-                                    <option value="見学のお申し込み">見学のお申し込み</option>
-                                    <option value="その他のお問い合わせ">その他のお問い合わせ</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="form-label col">お問い合わせ内容 <span class="required">必須</span></label>
-                        <div class="form-control-wrap col">
-                            <!-- CF7: [textarea* your-message class:form-control placeholder "ご質問やご相談内容をご記入ください。"] -->
-                            <textarea name="your-message" class="form-control" rows="8" placeholder="ご質問やご相談内容をご記入ください。"
-                                required></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group text-center mt-5">
-                        <div class="privacy-policy-acceptance mb-5">
-                            <!-- CF7: [acceptance your-consent] プライバシーポリシーに同意します [/acceptance] -->
-                            <label>
-                                <input type="checkbox" name="your-consent" required>
-                                <a href="<?php echo esc_url(home_url('/privacy/')); ?>" target="_blank"
-                                    class="policy-link">プライバシーポリシー</a>に同意します
-                            </label>
-                        </div>
-                        <!-- CF7: [submit class:btn-primary class:btn-submit "送信する"] -->
-                        <button type="submit" class="btn-primary btn-submit">送信する</button>
-                    </div>
-
-                </form>
+                <?php
+                // Contact Form 7「お問い合わせフォーム」をタイトルで解決して出力。
+                // 管理画面でこのタイトルのフォームを作成すると自動で表示される（SETUP.md参照）。
+                echo maw_seed_render_cf7( 'お問い合わせフォーム' );
+                ?>
             </div>
         </div>
     </section>

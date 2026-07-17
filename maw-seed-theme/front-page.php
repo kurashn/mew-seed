@@ -66,32 +66,38 @@
                 <h3>お知らせ</h3>
             </div>
             <div class="news-grid">
-                <article class="news-card">
-                    <div class="news-img">
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
-                                alt="夢み寮ホームページリニューアルのお知らせ">
-                        </a>
-                    </div>
-                    <div class="news-content">
-                        <span class="date">2026.07.16</span>
-                        <a href="<?php echo esc_url(home_url('/news-detail/')); ?>"
-                            class="news-title">ホームページを<br>リニューアルしました</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-img">
-                        <a href="<?php echo esc_url(home_url('/news-detail-recruit/')); ?>">
-                            <img loading="lazy" decoding="async" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
-                                alt="夢み寮 採用ページリニューアルのお知らせ">
-                        </a>
-                    </div>
-                    <div class="news-content">
-                        <span class="date">2026.07.16</span>
-                        <a href="<?php echo esc_url(home_url('/news-detail-recruit/')); ?>"
-                            class="news-title">採用ページを<br>リニューアルしました</a>
-                    </div>
-                </article>
+                <?php
+                // 最新のお知らせ3件（アイキャッチ未設定はブランドのデフォルト画像）
+                $maw_news = new WP_Query(array(
+                    'post_type'           => 'post',
+                    'posts_per_page'      => 3,
+                    'ignore_sticky_posts' => true,
+                ));
+                if ($maw_news->have_posts()):
+                    while ($maw_news->have_posts()):
+                        $maw_news->the_post(); ?>
+                        <article class="news-card">
+                            <div class="news-img">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php if (has_post_thumbnail()): ?>
+                                        <?php the_post_thumbnail('medium_large', array('loading' => 'lazy', 'decoding' => 'async')); ?>
+                                    <?php else: ?>
+                                        <img loading="lazy" decoding="async"
+                                            src="<?php echo esc_url(get_template_directory_uri()); ?>/images/news-default.jpg"
+                                            alt="<?php echo esc_attr(get_the_title()); ?>">
+                                    <?php endif; ?>
+                                </a>
+                            </div>
+                            <div class="news-content">
+                                <span class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></span>
+                                <a href="<?php the_permalink(); ?>" class="news-title"><?php the_title(); ?></a>
+                            </div>
+                        </article>
+                    <?php endwhile;
+                    wp_reset_postdata();
+                else: ?>
+                    <p class="text-center">お知らせは現在ありません。</p>
+                <?php endif; ?>
             </div>
             <div class="text-center mt-5">
                 <a href="<?php echo esc_url(home_url('/news/')); ?>" class="btn-secondary">一覧を見る</a>

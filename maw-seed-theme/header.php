@@ -34,8 +34,7 @@
                         <li><a href="<?php echo esc_url(home_url('/#guide')); ?>">寮案内</a></li>
                         <li><a href="<?php echo esc_url(home_url('/flow/')); ?>">ご入居の流れ</a></li>
                         <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
-                        <!-- Link updated to entry page -->
-                        <li><a href="<?php echo esc_url(home_url('/entry/')); ?>" class="btn-recruit">採用情報・エントリー</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/recruit/')); ?>" class="btn-recruit">採用情報</a></li>
                     </ul>
                 <?php endif; ?>
             </nav>

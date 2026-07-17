@@ -175,6 +175,25 @@ function maw_seed_seo_meta() {
 add_action( 'wp_head', 'maw_seed_seo_meta', 5 );
 
 /**
+ * Contact Form 7 のフォームを「タイトル」で解決して出力する。
+ * フォームIDが環境ごとに変わっても動くようにするためのヘルパー。
+ * CF7未導入・フォーム未作成時は電話案内のフォールバックを表示する。
+ */
+function maw_seed_render_cf7( $title ) {
+	if ( function_exists( 'wpcf7_get_contact_form_by_title' ) ) {
+		$form = wpcf7_get_contact_form_by_title( $title );
+		if ( $form ) {
+			return do_shortcode( '[contact-form-7 id="' . (int) $form->id() . '" title="' . esc_attr( $title ) . '"]' );
+		}
+	}
+	return '<div class="form-fallback text-center" style="padding: 40px 20px; background: #fff; border-radius: 8px;">'
+		. '<p>フォームは現在準備中です。<br>お手数ですが、お電話にてお問い合わせください。</p>'
+		. '<p style="font-size: 1.4em; font-weight: bold; margin-top: 15px;"><i class="fa-solid fa-phone"></i> 06-4950-4565</p>'
+		. '<p style="font-size: 0.9em; color: #666;">受付：平日 9:00〜18:00</p>'
+		. '</div>';
+}
+
+/**
  * favicon / apple-touch-icon（外観→サイトアイコン未設定時のフォールバック）
  */
 function maw_seed_favicon() {
