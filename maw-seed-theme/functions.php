@@ -60,6 +60,32 @@ function maw_seed_scripts() {
 add_action( 'wp_enqueue_scripts', 'maw_seed_scripts' );
 
 /**
+ * SEO: ドキュメントタイトルの最適化
+ * 区切りを「｜」に統一し、施設ページは地域キーワード入りのタイトルに強化する。
+ */
+function maw_seed_title_separator() {
+	return '｜';
+}
+add_filter( 'document_title_separator', 'maw_seed_title_separator' );
+
+function maw_seed_document_title( $parts ) {
+	$page_titles = array(
+		'daimotsu'         => '住宅型有料老人ホーム 夢み寮 だいもつ（尼崎市・大物駅徒歩1分）',
+		'higashinanamatsu' => '夢み寮 東七松（尼崎市の住宅型有料老人ホーム）',
+		'taisho'           => '夢み寮 大庄北（尼崎市の住宅型有料老人ホーム）',
+		'recruit'          => '採用情報（介護スタッフ募集・未経験OK）',
+	);
+	if ( is_page() && ! is_front_page() ) {
+		$slug = get_post_field( 'post_name', get_queried_object_id() );
+		if ( isset( $page_titles[ $slug ] ) ) {
+			$parts['title'] = $page_titles[ $slug ];
+		}
+	}
+	return $parts;
+}
+add_filter( 'document_title_parts', 'maw_seed_document_title' );
+
+/**
  * SEO: meta description / OGP / JSON-LD
  * ページごとの説明文とOGPを wp_head に出力する。
  */
