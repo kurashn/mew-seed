@@ -1,10 +1,19 @@
-<!DOCTYPE html>
+<?php
+/*
+ * Template Name: 投稿マニュアル
+ *
+ * クライアント向けブログ投稿マニュアル（スラッグ posting-manual の固定ページに自動適用）。
+ * サイトの見た目とは独立したスタンドアロンページとして出力する。
+ * 検索エンジンには載せない（noindex + functions.php でサイトマップからも除外）。
+ */
+?><!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>ブログ記事のつくりかた｜夢み寮ホームページ かんたんマニュアル</title>
+<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.png">
 <style>
   :root {
     --green: #A8B800;
@@ -167,7 +176,7 @@
       <h2>ログインする</h2>
     </div>
     <p>メモしたログインページのURLをひらくと、この画面が出ます。</p>
-    <img src="manual-images/01-login.png" alt="ログイン画面">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/01-login.png" alt="ログイン画面">
     <ol class="marks">
       <li data-n="1"><strong>ユーザー名</strong>を入力します</li>
       <li data-n="2"><strong>パスワード</strong>を入力します</li>
@@ -184,7 +193,7 @@
       <h2>「新しい記事」の画面をひらく</h2>
     </div>
     <p>ログインすると、管理画面（ダッシュボード）が表示されます。</p>
-    <img src="manual-images/02-menu.png" alt="投稿メニュー">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/02-menu.png" alt="投稿メニュー">
     <ol class="marks">
       <li data-n="1">左のメニューの<strong>「投稿」</strong>にマウスをのせます</li>
       <li data-n="2">出てきた<strong>「新規投稿を追加」</strong>をクリックします</li>
@@ -198,7 +207,7 @@
       <h2>タイトルと本文を書く</h2>
     </div>
     <p>まっしろな編集画面がひらきます。手紙を書くのと同じ感覚でOKです。</p>
-    <img src="manual-images/03-editor.png" alt="記事の編集画面">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/03-editor.png" alt="記事の編集画面">
     <ol class="marks">
       <li data-n="1">いちばん上の大きな欄に<strong>タイトル</strong>を書きます（例：「節分の豆まきをしました」）</li>
       <li data-n="2">その下をクリックして、<strong>本文</strong>を書きます。Enterキーで改行できます</li>
@@ -213,7 +222,7 @@
       <div class="step-num"><small>STEP</small>4</div>
       <h2>写真を入れる</h2>
     </div>
-    <img src="manual-images/04-image.png" alt="画像の挿入">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/04-image.png" alt="画像の挿入">
     <ol class="marks">
       <li data-n="1">本文の下にある<strong>「＋」ボタン</strong>をクリックします</li>
       <li data-n="2">出てきた一覧から<strong>「画像」</strong>を選びます</li>
@@ -229,7 +238,7 @@
       <h2>カテゴリを選ぶ</h2>
     </div>
     <p>記事の「種類」を選びます。画面の右側を見てください。</p>
-    <img src="manual-images/05-category.png" alt="カテゴリ選択">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/05-category.png" alt="カテゴリ選択">
     <ol class="marks">
       <li data-n="1">右上の<strong>設定ボタン</strong>を押すと右側にパネルがひらきます（最初からひらいていることもあります）</li>
       <li data-n="2"><strong>「カテゴリー」</strong>の中から、あてはまるものに<strong>1つチェック</strong>を入れます</li>
@@ -251,7 +260,7 @@
       <div class="step-num"><small>STEP</small>6</div>
       <h2>公開する（ボタンを2回押します）</h2>
     </div>
-    <img src="manual-images/06-publish.png" alt="公開ボタン">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/06-publish.png" alt="公開ボタン">
     <ol class="marks">
       <li data-n="1">右上の青い<strong>「公開」ボタン</strong>を押します</li>
       <li data-n="2">「公開してもよいですか？」と聞かれるので、<strong>もう一度「公開」</strong>を押します</li>
@@ -267,7 +276,7 @@
       <h2>あとから記事を直す・消す</h2>
     </div>
     <p>左メニューの「投稿」→「投稿一覧」をひらくと、これまでの記事が並んでいます。</p>
-    <img src="manual-images/07-edit.png" alt="投稿一覧">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/manual/07-edit.png" alt="投稿一覧">
     <ol class="marks">
       <li data-n="1">直したい記事のタイトルにマウスをのせると出てくる<strong>「編集」</strong>をクリック → 内容を直して、右上の「更新」ボタンを押せば反映されます</li>
     </ol>

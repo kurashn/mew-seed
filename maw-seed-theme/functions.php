@@ -202,6 +202,22 @@ function maw_seed_seo_meta() {
 add_action( 'wp_head', 'maw_seed_seo_meta', 5 );
 
 /**
+ * 投稿マニュアルページ（posting-manual）をXMLサイトマップから除外する。
+ * クライアント専用ページのため検索エンジンに知らせない（テンプレート側のnoindexと併用）。
+ */
+function maw_seed_sitemap_exclude_manual( $args, $post_type ) {
+	if ( 'page' === $post_type ) {
+		$manual = get_page_by_path( 'posting-manual' );
+		if ( $manual ) {
+			$args['post__not_in']   = isset( $args['post__not_in'] ) ? (array) $args['post__not_in'] : array();
+			$args['post__not_in'][] = $manual->ID;
+		}
+	}
+	return $args;
+}
+add_filter( 'wp_sitemaps_posts_query_args', 'maw_seed_sitemap_exclude_manual', 10, 2 );
+
+/**
  * 投稿スラッグ（URL）の日本語化を防ぐ。
  * クライアントが日本語タイトルのまま公開しても、URLが文字化け
  * （%E7%AF%80...）にならないよう、非ASCIIスラッグを自動で「post-投稿ID」に置換する。
