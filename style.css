@@ -986,6 +986,11 @@ h5 {
     letter-spacing: 0.1em;
 }
 
+.page-title .nobr {
+    display: inline-block;
+    /* 施設名の途中で改行させない（区切りの良い位置でのみ折り返す） */
+}
+
 .page-title .ja {
     display: block;
     font-size: 1.2rem;

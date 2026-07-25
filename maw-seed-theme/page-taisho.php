@@ -34,7 +34,7 @@ get_header(); ?>
     <section class="facility-intro section">
         <div class="container">
             <div class="intro-content text-center">
-                <h3 class="facility-catchphrase">阪急神戸線「園田駅」より徒歩15分。<br>安心とあたたかさに包まれた暮らしを提供します。</h3>
+                <h3 class="facility-catchphrase">JR「立花駅」より徒歩15分。<br>安心とあたたかさに包まれた暮らしを提供します。</h3>
                 <p class="mt-4">
                     「夢み寮 大庄北」は、認知症対応・24時間介護付きの安心な住環境を提供する住宅型有料老人ホームです。<br>
                     全室個室のプライベート空間と、アットホームな共用リビング、そして夢みカフェを併設。<br>
@@ -135,13 +135,14 @@ get_header(); ?>
             </div>
 
             <div class="access-info text-center mt-4">
-                <p class="access-train"><i class="fa-solid fa-train-subway"></i> 阪急神戸線「園田駅」より徒歩15分</p>
+                <p class="access-train"><i class="fa-solid fa-train-subway"></i> JR「立花駅」より徒歩15分</p>
+                <p class="access-train"><i class="fa-solid fa-bus"></i> 阪神バス「今北バス停」すぐ</p>
             </div>
 
             <div class="map-wrapper mt-4">
                 <!-- Google Maps Iframe for 兵庫県尼崎市大庄北3-1-23 -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.4326581977114!2d135.39702221276066!3d34.744577481109406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e88ba97f1f0b%3A0xc3105fd9c8eb44c2!2z44CSNjYwLTAwNjMg5YW15bqr55yM5bC85bSO5bSO5biC5aSn5bqE5YyX77yT5LiB55uu77yR4oiS77yS77yT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                    src="https://maps.google.com/maps?q=%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%B0%BC%E5%B4%8E%E5%B8%82%E5%A4%A7%E5%BA%84%E5%8C%973-1-23&z=17&hl=ja&output=embed"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
