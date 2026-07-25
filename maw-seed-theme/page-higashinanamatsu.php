@@ -141,7 +141,7 @@ get_header(); ?>
             <div class="map-wrapper mt-4">
                 <!-- Google Maps Iframe for 兵庫県尼崎市東七松町1-8-8 -->
                 <iframe
-                    src="https://maps.google.com/maps?q=%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%B0%BC%E5%B4%8E%E5%B8%82%E6%9D%B1%E4%B8%83%E6%9D%BE%E7%94%BA1-8-8&z=17&hl=ja&output=embed"
+                    src="https://maps.google.com/maps?q=34.735832,135.407623&z=17&hl=ja&output=embed"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
