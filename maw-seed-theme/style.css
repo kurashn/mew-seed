@@ -3,7 +3,7 @@ Theme Name: Maw Seed
 Theme URI: https://example.com/
 Author: BigThree Tech
 Description: 株式会社ミュウシード公式サイト用オリジナルテーマ。住宅型有料老人ホーム「夢み寮」（尼崎市）のコーポレートサイト。
-Version: 1.0.8
+Version: 1.0.9
 Requires at least: 6.0
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -999,9 +999,14 @@ h5 {
     letter-spacing: 0.1em;
 }
 
-.page-title .nobr {
+.nobr {
     display: inline-block;
-    /* 施設名の途中で改行させない（区切りの良い位置でのみ折り返す） */
+    /* 名称の途中で改行させない（区切りの良い位置でのみ折り返す） */
+}
+
+/* 見出しは折返し時に行長を均等化（1〜2文字だけの孤立行を防ぐ） */
+h1, h2, h3, h4 {
+    text-wrap: balance;
 }
 
 .page-title .ja {

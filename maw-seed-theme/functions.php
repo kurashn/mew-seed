@@ -205,6 +205,25 @@ function maw_seed_seo_meta() {
 add_action( 'wp_head', 'maw_seed_seo_meta', 5 );
 
 /**
+ * Google Analytics (GA4) gtag.js
+ * 全ページの<head>先頭側に出力する（wp_head 優先度1）。
+ */
+function maw_seed_gtag() {
+	?>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H02K71R8B1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-H02K71R8B1');
+	</script>
+	<?php
+}
+add_action( 'wp_head', 'maw_seed_gtag', 1 );
+
+/**
  * 投稿マニュアルページ（posting-manual）をXMLサイトマップから除外する。
  * クライアント専用ページのため検索エンジンに知らせない（テンプレート側のnoindexと併用）。
  */

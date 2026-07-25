@@ -34,7 +34,7 @@ get_header(); ?>
     <section class="facility-intro section">
         <div class="container">
             <div class="intro-content text-center">
-                <h3 class="facility-catchphrase">JR「立花駅」より徒歩15分。<br>安心とあたたかさに包まれた暮らしを提供します。</h3>
+                <h3 class="facility-catchphrase"><span class="nobr">JR「立花駅」より</span><span class="nobr">徒歩15分。</span><br><span class="nobr">安心とあたたかさに包まれた</span><span class="nobr">暮らしを提供します。</span></h3>
                 <p class="mt-4">
                     「夢み寮 大庄北」は、認知症対応・24時間介護付きの安心な住環境を提供する住宅型有料老人ホームです。<br>
                     全室個室のプライベート空間と、アットホームな共用リビング、そして夢みカフェを併設。<br>

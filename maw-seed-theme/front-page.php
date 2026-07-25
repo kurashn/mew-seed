@@ -148,7 +148,7 @@
                             class="dorm-thumb" alt="夢み寮 だいもつ">
                     </div>
                     <div class="dorm-info">
-                        <h4>住宅型有料老人ホーム 夢み寮 だいもつ</h4>
+                        <h4><span class="nobr">住宅型有料老人ホーム</span> <span class="nobr">夢み寮 だいもつ</span></h4>
                         <p class="address">〒660-0828 <br>兵庫県尼崎市東大物町1-5-27</p>
                         <p class="tel">TEL：06-6439-7070</p>
                         <a href="<?php echo esc_url(home_url('/daimotsu/')); ?>" class="btn-secondary">詳細を見る</a>
