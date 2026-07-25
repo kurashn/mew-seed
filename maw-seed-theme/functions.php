@@ -92,6 +92,9 @@ add_filter( 'document_title_parts', 'maw_seed_document_title' );
 function maw_seed_seo_meta() {
 	$img_base = get_template_directory_uri() . '/images/';
 
+	// Google Search Console 所有権確認タグ
+	echo '<meta name="google-site-verification" content="O8H0AEgrWCZx0KyKXk5aw7vMpZP2vIs4NZNflr15JXM" />' . "\n";
+
 	// スラッグ => array( description, og:image )
 	$seo = array(
 		'front'            => array( '兵庫県尼崎市で住宅型有料老人ホーム「夢み寮」を運営する株式会社ミュウシード。認知症対応・24時間介護付きの「寮」というかたちで、ご高齢の方の自分らしい暮らしを支えます。訪問介護・保育事業も展開。', 'daimotsu1.jpg' ),
