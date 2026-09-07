@@ -22,6 +22,7 @@
         <p class="copyright">&copy;
             <?php echo date('Y'); ?> Mew Seed Co., Ltd. All Rights Reserved.
         </p>
+        <p class="site-credit"><a href="https://www.nextvalley-jpn.com" target="_blank" rel="noopener">Site by NEXT VALLEY</a></p>
     </div>
 </footer>
 <?php wp_footer(); ?>
