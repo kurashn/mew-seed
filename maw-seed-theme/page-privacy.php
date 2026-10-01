@@ -29,7 +29,7 @@ get_header(); ?>
         <div class="container container-narrow">
             <div class="policy-wrapper">
                 <p class="policy-intro">
-                    株式会社ミュウシード（以下「当社」という）では、個人情報を以下の基準で取り扱います。
+                    株式会社夢み（旧社名：株式会社ミュウシード。以下「当社」という）では、個人情報を以下の基準で取り扱います。
                 </p>
 
                 <div class="policy-block">

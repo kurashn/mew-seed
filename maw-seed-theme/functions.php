@@ -97,17 +97,17 @@ function maw_seed_seo_meta() {
 
 	// スラッグ => array( description, og:image )
 	$seo = array(
-		'front'            => array( '兵庫県尼崎市で住宅型有料老人ホーム「夢み寮」を運営する株式会社ミュウシード。認知症対応・24時間介護付きの「寮」というかたちで、ご高齢の方の自分らしい暮らしを支えます。訪問介護・保育事業も展開。', 'daimotsu1.jpg' ),
-		'company'          => array( '株式会社ミュウシードの会社概要。本社：兵庫県尼崎市東七松町1-8-8／TEL：06-4950-4565。高齢者向け寮「夢み寮」の運営、訪問介護事業、保育事業を行っています。', 'higashinanamatsu1.JPG' ),
+		'front'            => array( '兵庫県尼崎市で住宅型有料老人ホーム「夢み寮」を運営する株式会社夢み。認知症対応・24時間介護付きの「寮」というかたちで、ご高齢の方の自分らしい暮らしを支えます。訪問介護・保育事業も展開。', 'daimotsu1.jpg' ),
+		'company'          => array( '株式会社夢みの会社概要。本社：兵庫県尼崎市東七松町1-8-8／TEL：06-4950-4565。高齢者向け寮「夢み寮」の運営、訪問介護事業、保育事業を行っています。', 'higashinanamatsu1.JPG' ),
 		'daimotsu'         => array( '阪神「大物駅」徒歩1分、尼崎市東大物町の住宅型有料老人ホーム「夢み寮 だいもつ」。認知症対応・24時間介護付き、全室個室19室、夢みカフェ併設。見学・ご相談はTEL：06-6439-7070まで。', 'daimotsu1.jpg' ),
 		'higashinanamatsu' => array( '尼崎市東七松町の住宅型有料老人ホーム「夢み寮 東七松」。認知症対応・24時間介護付きで、ご高齢の方の自分らしい暮らしをサポートします。見学・ご相談はTEL：06-6415-6888まで。', 'higashinanamatsu1.JPG' ),
 		'taisho'           => array( '尼崎市大庄北の住宅型有料老人ホーム「夢み寮 大庄北」。認知症対応・24時間介護付きで、ご高齢の方の自分らしい暮らしをサポートします。見学・ご相談はTEL：06-6412-3444まで。', 'oshokita1.JPG' ),
 		'flow'             => array( '夢み寮へのご入居の流れをご案内。お問い合わせ・見学から、面談、入居審査、ご契約、ご入居まで、スタッフが丁寧にサポートします。', 'hero-bg.jpg' ),
-		'contact'          => array( '株式会社ミュウシード・夢み寮へのお問い合わせページ。入居のご相談・見学のお申し込みはお電話（06-4950-4565／平日9:00〜18:00）またはフォームからお気軽にどうぞ。', 'hero-bg.jpg' ),
-		'news'             => array( '株式会社ミュウシード・夢み寮からのお知らせ・イベント情報・ブログの一覧です。', 'hero-bg.jpg' ),
+		'contact'          => array( '株式会社夢み・夢み寮へのお問い合わせページ。入居のご相談・見学のお申し込みはお電話（06-4950-4565／平日9:00〜18:00）またはフォームからお気軽にどうぞ。', 'hero-bg.jpg' ),
+		'news'             => array( '株式会社夢み・夢み寮からのお知らせ・イベント情報・ブログの一覧です。', 'hero-bg.jpg' ),
 		'recruit'          => array( '尼崎市の夢み寮で一緒に働きませんか。介護スタッフ（正社員・パート）、夜勤専門スタッフを募集中。未経験の方も研修制度があるので安心です。応募はお電話またはフォームから。', 'image2.jpg' ),
-		'entry'            => array( '株式会社ミュウシード・夢み寮の採用エントリーフォーム。職場見学のご希望もお気軽にどうぞ。', 'image2.jpg' ),
-		'privacy'          => array( '株式会社ミュウシードのプライバシーポリシー（個人情報保護方針）です。', '' ),
+		'entry'            => array( '株式会社夢み・夢み寮の採用エントリーフォーム。職場見学のご希望もお気軽にどうぞ。', 'image2.jpg' ),
+		'privacy'          => array( '株式会社夢みのプライバシーポリシー（個人情報保護方針）です。', '' ),
 	);
 
 	$key = '';
@@ -146,7 +146,7 @@ function maw_seed_seo_meta() {
 		echo '<meta property="og:image:width" content="1200">' . "\n";
 		echo '<meta property="og:image:height" content="630">' . "\n";
 	}
-	echo '<meta property="og:site_name" content="株式会社ミュウシード">' . "\n";
+	echo '<meta property="og:site_name" content="株式会社夢み">' . "\n";
 	echo '<meta property="og:locale" content="ja_JP">' . "\n";
 	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
 
@@ -155,7 +155,7 @@ function maw_seed_seo_meta() {
 		$org = array(
 			'@context'     => 'https://schema.org',
 			'@type'        => 'Organization',
-			'name'         => '株式会社ミュウシード',
+			'name'         => '株式会社夢み',
 			'url'          => home_url( '/' ),
 			'logo'         => $img_base . 'logo.png',
 			'telephone'    => '+81-6-4950-4565',
@@ -197,7 +197,7 @@ function maw_seed_seo_meta() {
 				'addressCountry'  => 'JP',
 			),
 			'areaServed'         => '兵庫県尼崎市',
-			'parentOrganization' => array( '@type' => 'Organization', 'name' => '株式会社ミュウシード' ),
+			'parentOrganization' => array( '@type' => 'Organization', 'name' => '株式会社夢み' ),
 		);
 		echo '<script type="application/ld+json">' . wp_json_encode( $lb, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
 	}
